@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <title>people:kargin:math448_fall2022</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2022-08-23T15:08:40-0400"/>
+<meta name="keywords" content="people,kargin,math448 fall2022"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="Department of Mathematics and Statistics, Binghamton University"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/p/people/kargin/math448_fall2022?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=people:kargin"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/p/people/kargin/math448_fall2022?do=export_xhtml"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/p/people/kargin/math448_fall2022?do=export_raw"/>
+<link rel="canonical" href="https://www2.math.binghamton.edu/p/people/kargin/math448_fall2022"/>
+<link rel="stylesheet" type="text/css" href="/lib/exe/css.php?t=math&amp;tseed=1728394530"/>
+<script type="text/javascript">/*<![CDATA[*/
+var NS='people:kargin';var JSINFO = {"id":"people:kargin:math448_fall2022","namespace":"people:kargin","plugin_folded":{"hide":"hide","reveal":"reveal"},"plugin_codeprettify":{"loader_base":"\/lib\/plugins\/codeprettify\/google-code-prettify"},"showbookcreatorpagetool":false,"DOKU_COOKIE_PARAM":{"path":"\/","secure":false}};
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1728394530&amp;template=math"></script>
+<script type="text/javascript" charset="utf-8" src="/lib/plugins/codeprettify/google-code-prettify/run_prettify.js?lang=css"></script>
+<script type="text/x-mathjax-config">/*<![CDATA[*/
+MathJax.Hub.Config({
+
+    tex2jax: {
+
+        inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+
+        displayMath: [ ["$$","$$"], ["\\[","\\]"] ],
+
+        processEscapes: true
+
+    }
+
+});
+
+
+
+
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="https://www2.math.binghamton.edu/js/MathJax/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<p>
+Syllabus
+</p>
+
+<h3 class="sectionedit1" id="math_448_introduction_to_statistics_fall_2022">Math 448 Introduction to Statistics. Fall 2022.</h3>
+<div class="level3">
+
+<p>
+Binghamton University 
+</p>
+<ul>
+<li class="level1"><div class="li"> Instructor: Vladislav Kargin</div>
+</li>
+<li class="level1"><div class="li"> Office: WH-136</div>
+</li>
+<li class="level1"><div class="li"> Meeting time and location: MWF 8:00 - 9:30 am at CW 212.</div>
+</li>
+<li class="level1"><div class="li"> Office hours: MWF 9:45 - 10:30, Monday 1 - 2 PM (in person, office WH136, or Zoom by appointment). </div>
+</li>
+</ul>
+
+<p>
+<strong> This course is a 4-credit course, which means that in addition to the scheduled lectures/discussions,
+students are expected to do at least 9.5 hours of course-related work each week during the
+semester. This includes things like: completing assigned readings, participating in lab sessions,
+studying for tests and examinations, preparing written assignments, completing internship or
+clinical placement requirements, and other tasks that must be completed to earn credit in the 
+course. </strong>
+</p>
+
+</div>
+
+<h4 id="prerequisite">Prerequisite</h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> A grade of C or better in Math 447</div>
+</li>
+</ul>
+
+</div>
+
+<h4 id="description">Description</h4>
+<div class="level4">
+
+<p>
+Understand the fundamental idea of statistical inference; conduct standard inferences including point estimation, confidence interval and hypothesis testing.
+Derive, evaluate and compare point estimators and confidence intervals. If time permits: Apply statistical inference to simple linear regression models. Provides understanding of basic concepts needed for more advanced courses in statistics. Gives initial exposure to statistical software.
+</p>
+
+</div>
+
+<h4 id="recommended_texts">Recommended Texts</h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Course Lecture Notes – they will be made available at the Piazza webpage</div>
+</li>
+<li class="level1"><div class="li"> “Mathematical Statistics with Applications” by Wackerly, Mendenhall, and Scheaffer</div>
+</li>
+</ul>
+
+<p>
+We will cover Chapters 8 - 11 of the book. Electronic copy will be made available at Piazza. Lecture notes are mostly based on the book, however, sections are rearranged and some material is added. 
+</p>
+
+</div>
+
+<h4 id="piazza">Piazza</h4>
+<div class="level4">
+
+<p>
+We will use Piazza (“<a href="http://piazza.com/" class="urlextern" title="http://piazza.com/">http://piazza.com/</a>”) for communication. All announcements will be sent to the class using Piazza. You can sign up at “<a href="http://piazza.com/binghamton/fall2022/math448" class="urlextern" title="http://piazza.com/binghamton/fall2022/math448">http://piazza.com/binghamton/fall2022/math448</a>” or you can send me an email and I sign up you. 
+</p>
+
+</div>
+
+<h4 id="homework">Homework</h4>
+<div class="level4">
+
+<p>
+Majority of homework will be assigned through WebAssign (<a href="https://www.webassign.net" class="urlextern" title="https://www.webassign.net">https://www.webassign.net</a>). The key for enrolling is: 
+binghamton 6504 3711. 
+</p>
+
+<p>
+After a short grace period, you will be required to pay for your WebAssign account (around $120 per term).
+</p>
+
+<p>
+Additional homework will be assigned through Gradescope (“<a href="https://www.gradescope.com/" class="urlextern" title="https://www.gradescope.com/">https://www.gradescope.com/</a>”).
+</p>
+
+<p>
+Brightspace will only be used minimally if at all.  
+</p>
+
+</div>
+
+<h4 id="software">Software</h4>
+<div class="level4">
+
+<p>
+Some homework will involve R, which is a statistical software package popular among statisticians. Installation instructions and downloads can be found at <a href="https://www.rstudio.com/products/rstudio/download/" class="urlextern" title="https://www.rstudio.com/products/rstudio/download/">https://www.rstudio.com/products/rstudio/download/</a>.
+</p>
+
+</div>
+
+<h4 id="exams">Exams</h4>
+<div class="level4">
+
+<p>
+There will be two midterms and a final exam. 
+Approximate schedule:<br/>
+
+Midterm 1 - Sep 28<br/>
+
+Midterm 2 - Nov 4<br/>
+
+Final - as determined by the university
+</p>
+
+</div>
+
+<h4 id="grading">Grading</h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Homework 15%</div>
+</li>
+<li class="level1"><div class="li"> Midterms 50% (25 each)</div>
+</li>
+<li class="level1"><div class="li"> Final Exam 35%</div>
+</li>
+</ul>
+
+
+
+</div>
+<!-- EDIT1 SECTION "Math 448 Introduction to Statistics. Fall 2022." [12-] --></div>
+</body>
+</html>

@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <title>people:kargin:math447_fall2024</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2024-08-20T13:45:25-0400"/>
+<meta name="keywords" content="people,kargin,math447 fall2024"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="Department of Mathematics and Statistics, Binghamton University"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/p/people/kargin/math447_fall2024?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=people:kargin"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/p/people/kargin/math447_fall2024?do=export_xhtml"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/p/people/kargin/math447_fall2024?do=export_raw"/>
+<link rel="canonical" href="https://www2.math.binghamton.edu/p/people/kargin/math447_fall2024"/>
+<link rel="stylesheet" type="text/css" href="/lib/exe/css.php?t=math&amp;tseed=1728394530"/>
+<script type="text/javascript">/*<![CDATA[*/
+var NS='people:kargin';var JSINFO = {"id":"people:kargin:math447_fall2024","namespace":"people:kargin","plugin_folded":{"hide":"hide","reveal":"reveal"},"plugin_codeprettify":{"loader_base":"\/lib\/plugins\/codeprettify\/google-code-prettify"},"showbookcreatorpagetool":false,"DOKU_COOKIE_PARAM":{"path":"\/","secure":false}};
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1728394530&amp;template=math"></script>
+<script type="text/javascript" charset="utf-8" src="/lib/plugins/codeprettify/google-code-prettify/run_prettify.js?lang=css"></script>
+<script type="text/x-mathjax-config">/*<![CDATA[*/
+MathJax.Hub.Config({
+
+    tex2jax: {
+
+        inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+
+        displayMath: [ ["$$","$$"], ["\\[","\\]"] ],
+
+        processEscapes: true
+
+    }
+
+});
+
+
+
+
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="https://www2.math.binghamton.edu/js/MathJax/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<p>
+Syllabus
+</p>
+
+<h3 class="sectionedit1" id="math_447_introduction_to_probability_theory_fall_2024">Math 447 Introduction to Probability Theory. Fall 2024.</h3>
+<div class="level3">
+
+<p>
+Binghamton University 
+</p>
+<ul>
+<li class="level1"><div class="li"> Instructor: Vladislav Kargin</div>
+</li>
+<li class="level1"><div class="li"> Office: WH-136</div>
+</li>
+<li class="level1"><div class="li"> Meeting time and location: MWF 9:40 - 11:10 am at CW 112.</div>
+</li>
+<li class="level1"><div class="li"> Office hours: MWF 2 - 3pm (in person, office WH136). </div>
+</li>
+</ul>
+
+<p>
+<strong> This course is a 4-credit course, which means that in addition to the scheduled lectures/discussions,
+students are expected to do at least 9.5 hours of course-related work each week during the
+semester. This includes things like: completing assigned readings, participating in lab sessions,
+studying for tests and examinations, preparing written assignments, completing internship or
+clinical placement requirements, and other tasks that must be completed to earn credit in the 
+course. </strong>
+</p>
+
+</div>
+
+<h4 id="prerequisite">Prerequisite</h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> A grade of C or better in Math 323</div>
+</li>
+</ul>
+
+</div>
+
+<h4 id="description">Description</h4>
+<div class="level4">
+
+<p>
+This is an introductory course that will cover basic combinatorial probability and essential tools of modern probability, including mathematical expectation, probability conditioning,  moments and moment generating function. It will discuss common discrete and continuous distributions, multivariate distributions and some limit theorems. It is prerequisite course for Math 448 (the statistics half of the sequence) and several other actuarial/statistics courses. The learning outcome is the ability to work with probability tools necessary for these courses. 
+</p>
+
+</div>
+
+<h4 id="recommended_texts">Recommended Texts</h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> “Introduction to Probability”, 2nd edition, by Blitzstein and Hwang. </div>
+</li>
+</ul>
+
+<p>
+We will cover Chapters 1-10. 
+</p>
+
+</div>
+
+<h4 id="online_resources">Online resources</h4>
+<div class="level4">
+
+<p>
+Some resources for this book are available at <a href="https://projects.iq.harvard.edu/stat110/" class="urlextern" title="https://projects.iq.harvard.edu/stat110/">stat110.net</a>
+</p>
+
+</div>
+
+<h4 id="piazza">Piazza</h4>
+<div class="level4">
+
+<p>
+We will use Piazza (“<a href="http://piazza.com/" class="urlextern" title="http://piazza.com/">http://piazza.com/</a>”) for communication. All announcements will be sent to the class using Piazza. Signup is possible at this link: <a href="https://piazza.com/binghamton/fall2024/math447" class="urlextern" title="https://piazza.com/binghamton/fall2024/math447">https://piazza.com/binghamton/fall2024/math447</a>.
+</p>
+
+</div>
+
+<h4 id="quizzes">Quizzes</h4>
+<div class="level4">
+
+<p>
+There will be an in-class quiz every week except for weeks of exams, which will likely to result in around  12 quizzes. 
+The quizzes cannot be taken at a different time. The three lowest quiz scores will be dropped in the sum. 
+</p>
+
+</div>
+
+<h4 id="homework">Homework</h4>
+<div class="level4">
+
+<p>
+Homework usually will be assigned weekly, but it will not be graded. Problems similar to homework can be put on quizzes or exams. There will be occasional homework questions on Gradescope, which are considered take-home quizzes.
+</p>
+
+</div>
+
+<h4 id="exams">Exams</h4>
+<div class="level4">
+
+<p>
+There will be three in-class midterms and a final exam. There will be no makeups for midterms. If you have
+to miss a midterm (for a valid reason), its weight will be replaced by an increase in the weight of the 
+final exam.  
+</p>
+
+<p>
+Preliminary schedule (can change!):<br/>
+
+Midterm 1 - Mon, September 23<br/>
+
+Midterm 2 - Mon, October 21<br/>
+
+Midterm 3 - Mon, November 18<br/>
+
+Final - as determined by the university
+</p>
+
+</div>
+
+<h4 id="grading">Grading</h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Quizzes 25%</div>
+</li>
+<li class="level1"><div class="li"> Midterms 45 = 15 + 15 + 15%</div>
+</li>
+<li class="level1"><div class="li"> Final Exam 30%</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT1 SECTION "Math 447 Introduction to Probability Theory. Fall 2024." [12-] --></div>
+</body>
+</html>

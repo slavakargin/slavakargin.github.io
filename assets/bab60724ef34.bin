@@ -1,0 +1,21 @@
+
+Some materials for Math 530
+
+
+Colab Notebooks:
+  * {{https://colab.research.google.com/drive/1bw0I7cy86mwiMGxwrSbJTf1u70YB-F-1?usp=sharing | Notebook I }} (Numpy library: tensors, matrices, matrix multiplication; sympy library: rank via rref; scipy.linalg library: LU decomposition)
+  * {{https://colab.research.google.com/drive/1kULV4S_RU75K1s89r-eYs8BAK32L2Spv?usp=sharing | Notebook II }}(Vector and matrix norms, orthogonality of matrices and vector subspaces, QR decomposition, Linear regression)
+
+Homework:
+  * {{:people:kargin:math530:hw1b_f2022.pdf| HW1}}
+  * {{:people:kargin:math530:hw2b_f2022.pdf| HW2}}
+  * {{:people:kargin:math530:hw3_f2022.pdf| HW3}}
+  * {{:people:kargin:math530:hw4_f2022.pdf| HW4}}
+  * {{:people:kargin:math530:hw5_f2022.pdf| HW5}}
+  * {{:people:kargin:math530:hw6_f2022.pdf| HW6}}
+  * {{:people:kargin:math530:hw7_f2022.pdf| HW7}}
+
+
+Additional Python HW:
+  * {{ https://colab.research.google.com/drive/11fSM1mAPA9c7hBdYZhCPRo-a9N7-ciE0?usp=sharing | Python HW5}}
+  * {{ https://colab.research.google.com/drive/1n73mW1vDPb3FVWO1AhoAJSxxU81sRKPx?usp=sharing | Python HW6}}

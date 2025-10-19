@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <title>people:kargin:math530_fall2020</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2022-09-15T20:00:11-0400"/>
+<meta name="keywords" content="people,kargin,math530 fall2020"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="Department of Mathematics and Statistics, Binghamton University"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/p/people/kargin/math530_fall2020?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=people:kargin"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/p/people/kargin/math530_fall2020?do=export_xhtml"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/p/people/kargin/math530_fall2020?do=export_raw"/>
+<link rel="canonical" href="https://www2.math.binghamton.edu/p/people/kargin/math530_fall2020"/>
+<link rel="stylesheet" type="text/css" href="/lib/exe/css.php?t=math&amp;tseed=1728394530"/>
+<script type="text/javascript">/*<![CDATA[*/
+var NS='people:kargin';var JSINFO = {"id":"people:kargin:math530_fall2020","namespace":"people:kargin","plugin_folded":{"hide":"hide","reveal":"reveal"},"plugin_codeprettify":{"loader_base":"\/lib\/plugins\/codeprettify\/google-code-prettify"},"showbookcreatorpagetool":false,"DOKU_COOKIE_PARAM":{"path":"\/","secure":false}};
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1728394530&amp;template=math"></script>
+<script type="text/javascript" charset="utf-8" src="/lib/plugins/codeprettify/google-code-prettify/run_prettify.js?lang=css"></script>
+<script type="text/x-mathjax-config">/*<![CDATA[*/
+MathJax.Hub.Config({
+
+    tex2jax: {
+
+        inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+
+        displayMath: [ ["$$","$$"], ["\\[","\\]"] ],
+
+        processEscapes: true
+
+    }
+
+});
+
+
+
+
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="https://www2.math.binghamton.edu/js/MathJax/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h3 class="sectionedit1" id="math_530linear_algebra_for_statisticians">Math 530: Linear Algebra for Statisticians</h3>
+<div class="level3">
+
+</div>
+
+<h4 id="basic_info">Basic Info</h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> Meeting times/Place: MWF 10:50am -11:50am at LN2403</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Office hours: MWF 9:45 - 10:30 AM, Monday 1 - 2 PM (in person, office WH136, or by Zoom), or by appointment</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Prerequisites:  Math 304 (Linear Algebra), 329, 330 or equivalent.  </div>
+</li>
+</ul>
+
+</div>
+
+<h4 id="texts">Texts</h4>
+<div class="level4">
+<ol>
+<li class="level1"><div class="li"> We will use Strang “Linear Algebra with Applications”, and “Numerical Linear Algebra” by Lloyd Trefethen and David Bau.</div>
+</li>
+</ol>
+
+<p>
+The electronic versions of these books are available at the Piazza course webpage. 
+</p>
+
+</div>
+
+<h4 id="learning_outcomes">Learning outcomes</h4>
+<div class="level4">
+
+<p>
+We will cover several types of matrices, various matrix decompositions including SVD, QR and Cholesky, their application to linear regression,  and Multivariate Gaussian distribution. 
+</p>
+
+</div>
+
+<h4 id="computing">Computing</h4>
+<div class="level4">
+
+<p>
+I will ask students to subscribe to Datacamp.com for 1 or 2 months (do not pay annual subscription!) and take 3 Datacamp courses in “Python”. Specifically, “Introduction to Python”, “Intermediate Python”, “Python Data Science Toolbox 1”. Every datacamp course will be expected to be finished in 1 or 2 weeks and at the end of each one, the student will send me a proof that he or she has passed the course. There will be additional Python based exercises. 
+</p>
+
+</div>
+
+<h4 id="communication">Communication</h4>
+<div class="level4">
+
+<p>
+I will mostly use Piazza Forum (<a href="https://piazza.com" class="urlextern" title="https://piazza.com">https://piazza.com</a>). In particular, I will post all announcements and lecture notes on this website. So make sure that you are enrolled at Piazza. You can either sign up at  “<a href="https://piazza.com/binghamton/fall2022/math488math530" class="urlextern" title="https://piazza.com/binghamton/fall2022/math488math530">https://piazza.com/binghamton/fall2022/math488math530</a>” or send me an email. Since this is a forum,  questions and answers by students are encouraged. 
+I will use MyCourses/Brightspace only minimally if at all.  
+</p>
+
+</div>
+
+<h4 id="homework_policy">Homework Policy</h4>
+<div class="level4">
+
+<p>
+The homework on linear algebra will be assigned using Gradescope. 
+</p>
+
+<p>
+There will be a deduction of 25% of the grade for homework assignments that are not typeset using LaTeX. (For users with no experience with LaTex, I suggest trying “<a href="https://www.overleaf.com/" class="urlextern" title="https://www.overleaf.com/">https://www.overleaf.com/</a>”.)
+</p>
+
+<p>
+There will be a deduction of 15% of the grade for each day homeworks are late (the final grade for a late homework that is N days late will be 0.85^N times the real grade). Homeworks may be discussed with classmates but must be written and submitted individually.
+</p>
+
+<p>
+There will also be some Python homework which will have to be submitted both on Gradescope (pdf file) 
+and through a Google form (source file).
+</p>
+
+</div>
+
+<h4 id="exams">Exams</h4>
+<div class="level4">
+
+<p>
+The will be two midterms and one final exam. 
+</p>
+
+</div>
+
+<h4 id="grading">Grading</h4>
+<div class="level4">
+
+<p>
+The grading scale will be different for undergraduate and graduate students. 
+</p>
+<ul>
+<li class="level1"><div class="li"> Linear Algebra Homework 25%</div>
+</li>
+<li class="level1"><div class="li"> Python Courses + Python Homework 25%</div>
+</li>
+<li class="level1"><div class="li"> Midterms 20% (10% each)</div>
+</li>
+<li class="level1"><div class="li"> Final Exam 30%</div>
+</li>
+</ul>
+
+</div>
+
+<h4 id="tentative_schedule">Tentative Schedule</h4>
+<div class="level4">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> Midterm Exam I </td><td class="col1"> September 30 </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Midterm Exam II </td><td class="col1"> October 28 </td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [2775-2841] -->
+</div>
+</div>
+</body>
+</html>
