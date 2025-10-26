@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <title>people:kargin:math447_spring2021</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2021-02-08T21:09:22-0500"/>
+<meta name="keywords" content="people,kargin,math447 spring2021"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="Department of Mathematics and Statistics, Binghamton University"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/p/people/kargin/math447_spring2021?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=people:kargin"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/p/people/kargin/math447_spring2021?do=export_xhtml"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/p/people/kargin/math447_spring2021?do=export_raw"/>
+<link rel="canonical" href="https://www2.math.binghamton.edu/p/people/kargin/math447_spring2021"/>
+<link rel="stylesheet" type="text/css" href="/lib/exe/css.php?t=math&amp;tseed=1728394530"/>
+<script type="text/javascript">/*<![CDATA[*/
+var NS='people:kargin';var JSINFO = {"id":"people:kargin:math447_spring2021","namespace":"people:kargin","plugin_folded":{"hide":"hide","reveal":"reveal"},"plugin_codeprettify":{"loader_base":"\/lib\/plugins\/codeprettify\/google-code-prettify"},"showbookcreatorpagetool":false,"DOKU_COOKIE_PARAM":{"path":"\/","secure":false}};
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1728394530&amp;template=math"></script>
+<script type="text/javascript" charset="utf-8" src="/lib/plugins/codeprettify/google-code-prettify/run_prettify.js?lang=css"></script>
+<script type="text/x-mathjax-config">/*<![CDATA[*/
+MathJax.Hub.Config({
+
+    tex2jax: {
+
+        inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+
+        displayMath: [ ["$$","$$"], ["\\[","\\]"] ],
+
+        processEscapes: true
+
+    }
+
+});
+
+
+
+
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="https://www2.math.binghamton.edu/js/MathJax/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<p>
+Course: Math 447 Introduction to Probability  
+</p>
+
+<p>
+Meeting times: 8:00am - 9:30am 
+Place: Online (Zoom ID 918 2625 1611)
+</p>
+
+<p>
+Office hours: MWF 10:00AM - 11:00AM (or by appointment); Zoom ID 949 5616 9870 
+</p>
+
+<p>
+email: vkargin@binghamton.edu
+</p>
+
+<p>
+Prerequisites:  A grade of C or better in Math 323.  If you have no better than a C in Math 323 you will probably struggle in this course. This is not an easy course and mathematical sophistication is expected. 
+</p>
+
+<p>
+Learning outcomes:  This is a prerequisite for Math 448 (the statistics half of the sequence) and several other actuarial/statistics courses.  The learning outcome is the ability to work with probability tools necessary for these courses. Topics include:  basic combinatorial probability, common discrete and continuous distributions, probability conditioning, moments, multivariate distributions and some limit theorems.
+</p>
+
+<p>
+ZOOM lectures: 
+– All lectures will be delivered through ZOOM.
+– You are expected at least initially login with video. There will be a small bonus for active class participation and “video on” counts as participation. Bonus is solely at the instructor&#039;s discretion. 
+– Questions are welcomed, especially questions that catch my typos, – you can unmute at any time and ask a question. You can also ask a question/correct typo in the chat, although I am not able to monitor the chat closely while lecturing.
+– The attendance will not affect the course grade directly except for the small bonus for active participation. While it is advisable to attend lectures regularly to make sure that you are on track, the  lecture recordings from the previous semester are available, so you can view them  asynchronously. 
+</p>
+
+<p>
+Communication: I will mostly use Piazza Forum (<a href="https://piazza.com/signup/binghamton" class="urlextern" title="https://piazza.com/signup/binghamton">https://piazza.com/signup/binghamton</a>). It is crucial that you enroll for this course at Piazza since I will post all announcements and lecture notes there. Questions and answers by students are encouraged. With respect to MyCourses/Blackboard, I will use it only minimally.  
+</p>
+
+<p>
+As a text, I will use  “Mathematical Statistics with Applications” by Wackerly, Mendenhall, and Scheaffer. We will cover Chapter 2-7. Buy this book only if you need a paper copy. Electronic copy will be made available at Piazza. I will also provide (at Piazza) my lecture notes that are mostly based on this book.	
+</p>
+
+<p>
+Homework will be delivered through WebAssign (<a href="https://www.webassign.com" class="urlextern" title="https://www.webassign.com">https://www.webassign.com</a>). 
+The key for enrolling will be provided. You will need to pay for your WebAssign account (around $120 per term).
+</p>
+
+<p>
+Exams: There will be two midterms and a final exam. All of them will be online.  
+Approximate schedule:<br/>
+
+Midterm 1 - March 15<br/>
+
+Midterm 2 - April 19<br/>
+
+Final - as determined by the university
+</p>
+
+<p>
+Grading: 
+The scores will be calculated in two ways 
+</p>
+
+<p>
+Method I: 
+Online Homework 20%
+Midterms 50% (25 each)
+Final Exam 30%
+</p>
+
+<p>
+Method II:
+Online Homework 10%
+Midterms 50% (25 each)
+Final Exam 40%
+</p>
+
+<p>
+Then, the maximum score for these two methods will be calculated and used as the final total score (subject 
+to small discretionary bonus from class participation not to exceed 3%).
+The letter grade will be curved according to the overall class performance due to the difficulty of the material. 
+</p>
+</div>
+</body>
+</html>

@@ -21,9 +21,11 @@ from email.utils import formatdate
 
 
 BASE = "https://www2.math.binghamton.edu"
+# put this near the top, after the constants
+BASE_PREFIX = "/bu"   # "" means root; "/bu" means mirror lives at /bu/
 NS_ROOT = "/p/people/kargin"
 SITEMAP_URL = f"{BASE}{NS_ROOT}/start?do=index"
-OUTDIR = Path(".")  # write into repo root
+OUTDIR = Path(BASE_PREFIX.strip("/")) if BASE_PREFIX else Path(".")
 ASSET_DIR = OUTDIR / "assets"
 HEAD_HTML = """<!doctype html>
 <html lang="en"><head>
@@ -51,9 +53,9 @@ window.MathJax={{tex:{{inlineMath:[['$','$'],['\\\\(','\\\\)']]}}}};
 <header>
   <h1><a href="/index.html" style="text-decoration:none;color:inherit;">Vladislav Kargin</a></h1>
   <nav>
-    <a href="/index.html">Home</a>
-    <a href="/kargin_publications/index.html">Publications</a>
-    <a href="/letterinfo/index.html">Letters</a>
+  <a href="{base}/">Home</a>
+  <a href="{base}/kargin_publications/">Publications</a>
+  <a href="{base}/letterinfo/">Letters</a>
   </nav>
 </header>
 <main>
@@ -150,9 +152,11 @@ def ensure_dir(p: Path):
 
 def save_page(out_dir: Path, title: str, body_html: str, source_url: str):
     ensure_dir(out_dir)
-    html = HEAD_HTML.format(title=title) + body_html + FOOT_HTML.format(source=source_url, stamp=formatdate(usegmt=True))
-    (out_dir / "index.html").write_text(html, encoding="utf-8")
-
+    html = (
+    HEAD_HTML.format(title=title, base=BASE_PREFIX)
+    + body_html
+    + FOOT_HTML.format(source=source_url, stamp=formatdate(usegmt=True))
+    )
 def download_asset(url: str) -> str:
     """Download to assets/ and return relative path; on failure, return normalized external URL."""
     ensure_dir(ASSET_DIR)
@@ -170,7 +174,8 @@ def download_asset(url: str) -> str:
                 with open(fn, "wb") as f:
                     for chunk in r.iter_content(8192):
                         f.write(chunk)
-        return "/" + str(fn.relative_to(OUTDIR)).replace(os.sep, "/")
+        rel = str(fn.relative_to(OUTDIR)).replace(os.sep, "/")
+        return f"{BASE_PREFIX}/{rel}"
     except Exception as e:
         print(f"  [warn] asset fetch failed: {url} ({e}); linking externally")
         return normalize_external_url(url)
@@ -204,7 +209,7 @@ def rewrite_links(html: str, page_url: str) -> str:
         # Internal page under your namespace
         if href_abs.startswith(f"{BASE}{NS_ROOT}/"):
             slug = safe_slug(urllib.parse.urlparse(href_abs).path)
-            a["href"] = "/" if slug == "start" else f"/{slug}/"
+            a["href"] = f"{BASE_PREFIX}/" if slug == "start" else f"{BASE_PREFIX}/{slug}/"
             continue
 
         # Dokuwiki media fetches (may wrap external URLs)

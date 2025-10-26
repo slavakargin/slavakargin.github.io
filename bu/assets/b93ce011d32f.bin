@@ -1,0 +1,85 @@
+
+Syllabus
+
+
+==== Math 447 Introduction to Probability Theory. Fall 2024.====
+Binghamton University 
+
+  * Instructor: Vladislav Kargin
+  * Office: WH-136
+  * Meeting time and location: MWF 9:40 - 11:10 am at CW 112.
+  * Office hours: MWF 2 - 3pm (in person, office WH136). 
+
+** This course is a 4-credit course, which means that in addition to the scheduled lectures/discussions,
+students are expected to do at least 9.5 hours of course-related work each week during the
+semester. This includes things like: completing assigned readings, participating in lab sessions,
+studying for tests and examinations, preparing written assignments, completing internship or
+clinical placement requirements, and other tasks that must be completed to earn credit in the 
+course. **
+
+=== Prerequisite ===
+
+  * A grade of C or better in Math 323
+
+
+
+
+=== Description ===
+
+This is an introductory course that will cover basic combinatorial probability and essential tools of modern probability, including mathematical expectation, probability conditioning,  moments and moment generating function. It will discuss common discrete and continuous distributions, multivariate distributions and some limit theorems. It is prerequisite course for Math 448 (the statistics half of the sequence) and several other actuarial/statistics courses. The learning outcome is the ability to work with probability tools necessary for these courses. 
+
+
+
+=== Recommended Texts ===
+
+  * “Introduction to Probability”, 2nd edition, by Blitzstein and Hwang. 
+We will cover Chapters 1-10. 
+
+
+=== Online resources === 
+Some resources for this book are available at [[https://projects.iq.harvard.edu/stat110/|stat110.net]]
+
+
+=== Piazza===
+
+We will use Piazza ("http://piazza.com/") for communication. All announcements will be sent to the class using Piazza. Signup is possible at this link: [[https://piazza.com/binghamton/fall2024/math447]].
+
+=== Quizzes ===
+There will be an in-class quiz every week except for weeks of exams, which will likely to result in around  12 quizzes. 
+The quizzes cannot be taken at a different time. The three lowest quiz scores will be dropped in the sum. 
+
+=== Homework === 
+
+Homework usually will be assigned weekly, but it will not be graded. Problems similar to homework can be put on quizzes or exams. There will be occasional homework questions on Gradescope, which are considered take-home quizzes. 
+
+/*
+Majority of homework will be assigned through WebAssign (https://www.webassign.net). The key for enrolling will be provided. You will need to pay for your WebAssign account (around $120 per term).
+
+Some of homework will be assigned through Gradescope ("https://www.gradescope.com/").
+
+Brightspace will only be used minimally.  
+*/
+
+
+
+=== Exams === 
+There will be three in-class midterms and a final exam. There will be no makeups for midterms. If you have
+to miss a midterm (for a valid reason), its weight will be replaced by an increase in the weight of the 
+final exam.  
+
+Preliminary schedule (can change!):\\
+Midterm 1 - Mon, September 23\\
+Midterm 2 - Mon, October 21\\
+Midterm 3 - Mon, November 18\\
+Final - as determined by the university
+
+
+
+=== Grading ===
+  * Quizzes 25%
+  * Midterms 45 = 15 + 15 + 15%
+  * Final Exam 30%
+
+
+
+

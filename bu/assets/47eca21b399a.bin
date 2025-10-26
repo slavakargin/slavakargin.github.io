@@ -1,0 +1,128 @@
+
+Syllabus
+
+
+==== Math 457 Introduction to Statistical Learning. Fall 2025.====
+Binghamton University 
+
+  * **Instructor: Vladislav Kargin (vkargin@binghamton.edu)** 
+  * Class Meeting time and location: MWF -- 11:45-1:15 in AP G014
+  * Office hours: Thursday -- 11:45-1:15 in office WH-136 or by arrangement by Zoom. 
+  * **TA: McKenzie Skrastins: (mskrast1@binghamton.edu)**
+  * Office hours: Monday -- 1:30-2:30, Tuesday -- 12 - 1pm in Whitney Hall Undergraduate Student Lounge (2nd floor)
+
+
+** This course is a 4-credit course, which means that in addition to the scheduled lectures/discussions,
+students are expected to do at least 9.5 hours of course-related work each week during the
+semester. This includes things like: completing assigned readings, participating in lab sessions,
+studying for tests and examinations, preparing written assignments, completing internship or
+clinical placement requirements, and other tasks that must be completed to earn credit in the 
+course. **
+
+=== Prerequisite ===
+
+  * Scientific programming in a language such as R, Matlab, or Python.
+  * Linear regression and statistical inference
+  * Matrix algebra, preferably including orthogonality, eigenvalues and eigenvectors, and singular value decomposition.
+
+=== Description ===
+
+This course is a survey of statistical learning methods. It will cover major statistical learning methods and concepts for both supervised and unsupervised learning. Topics covered include regression methods with sparsity or other regularizations, model selection, introduction to classification, including discriminant analysis, logistic regression, support vector machines, and kernel methods, nonlinear methods, clustering, decision trees, random forest, boosting and ensemble learning, neural networks, graphical models.
+
+
+
+=== Learning Outcomes === 
+
+Students will learn how and when to apply statistical learning techniques, their comparative strengths and weaknesses, and how to critically evaluate the performance of learning algorithms. Students completing this course should be able to 
+
+  * process and visualize different data types,
+  * apply basic statistical learning methods to build predictive models or perform exploratory analysis
+  * have basic understanding of the underlying mechanism of predictive models and evaluate and interpret such models,
+  * properly tune, select and validate statistical learning models,
+  * use analytical tools and software widely used in practice,
+  * work both independently and in a team to solve problems, and
+  * learn to present and communicate the findings effectively.
+
+=== Text ===
+
+  * James, Witten, Hastie and Tibshirani, 2021. "An Introduction to Statistical Learning with Applications in Python." (ISLP) The book home page is at "https://www.statlearning.com". A pdf file can be downloaded from this page. 
+
+=== Supplementary Text ===
+
+  * Bishop, Bishop, 2024. "Deep Learning. Foundations and Concepts." The book homepage is at "https://www.bishopbook.com". At this page, a digital version of the book is available.  
+
+
+
+
+=== Online resources === 
+There is an online course taught by the ISLP book's authors. It is available at [[https://www.edx.org/learn/python/stanford-university-statistical-learning-with-python|edx]] and [[https://www.youtube.com/playlist?list=PLoROMvodv4rOzrYsAxzQyHb8n_RWNuS1e|YouTube]]. This course has some intersection with our course but it is not identical. It has different order of topics and some topics are not covered. 
+
+
+
+=== Software ===
+
+We will use Python and Google Colab. 
+
+/*Optionally, you can install Anaconda and Jupiter on your computer to run Jupiter notebooks with Python code locally. See some instructions here:
+[[https://islp.readthedocs.io/en/latest/installation.html|Installation instructions]].
+*/
+
+
+=== Piazza===
+
+We will use Piazza ("http://piazza.com/") for communication. All announcements will be sent to the class using Piazza. The signup  is at this link: [[https://piazza.com/binghamton/fall2025/math457]].
+ 
+
+=== Brightspace ===
+
+Brightspace will be used minimally. 
+
+=== Homework / Quizzes Policies === 
+
+The Homework will have several components:
+
+  - Several Assignments at Datacamp for learning python (worth 10% of HW) [This component can be waived if you have a proof of a Python class. Even in this case you might find it necessary to complete learning modules on basics of object oriented programming in Python.]
+  - Computational Assignments as Google Colab Notebooks (worth 40% of HW)
+  - Assignments at Gradescope (worth 50% of HW)
+
+We will use Datacamp, Google Classrooms (Class code: 7osx6f2j) and Gradescope ("https://www.gradescope.com/") to submit and grade homework. Homework may be discussed with classmates but must be written and submitted individually. ChatGPT and similar AI tools can be used for homework. They are not allowed during in-class quizzes and exams. 
+
+If  in-class quizzes are used, the policy is that two lowest or missing grades are dropped from total score calculation. 
+
+=== Exams === 
+There will be a midterm and a final exam focusing on the theoretical part of the course. Final is cumulative.
+
+=== Project ===
+A group project will be assigned to each student (2 - 3 students in a group, 4 students are not allowed without a strong justification). Successful completion of the project includes an preliminary report, a presentation and a final report.
+
+
+
+=== Grading ===
+  * Homework (20%)
+  * In-class Quizzes (10%)
+  * Midterm exam (20%)
+  * Project (30%)
+  * Final exam (20%)
+ 
+
+Letter grades will be assigned according to a scale determined after the course ends, but you are guaranteed at least: A for ≥ 90, A− for ≥ 85, B+ for ≥ 80, B for ≥ 75, B− for ≥ 70, C+ for ≥ 65, C for ≥ 60, C− for ≥ 55, D for ≥ 50.
+
+
+
+/*
+<h2>Data Analysis Contest</h2>
+<p>Students will compete against each other in a Data Analysis Contest. The competition will begin on Tuesday, Feburary 20 and can be completed in teams of 2 &ndash; 4 members. Grades will be based upon a progress report and a final report (one per team) as well as the contest results. Further details about the contest along with specific grading criteria will be given in a separate document and discussed in class.</p>
+*/
+
+
+
+
+
+=== Tentative schedule ===
+
+| Midterm | Wed, October 8|
+| Project Proposal | due Nov 1 |
+| Preliminary report  | due Nov 13 |
+| Project presentations | Dec 1 - Dec 5 |
+| Final Report | due Dec 6 |
+| Final Exam | As scheduled by the University, --- |

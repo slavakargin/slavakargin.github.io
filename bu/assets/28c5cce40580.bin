@@ -1,0 +1,93 @@
+
+Syllabus
+
+
+==== Math 571 Advanced Probability. Fall 2023.====
+Binghamton University 
+
+  * Instructor: Vladislav Kargin
+  * Office: WH-136
+  * Meeting time and location: MWF -- 8:00-9:30 -- WH 329
+  * Office hours: MWF -- 9:50-10:50 
+
+** This course is a 4-credit course, which means that in addition to the scheduled lectures/discussions,
+students are expected to do at least 9.5 hours of course-related work each week during the
+semester. This includes things like: completing assigned readings, participating in lab sessions,
+studying for tests and examinations, preparing written assignments, completing internship or
+clinical placement requirements, and other tasks that must be completed to earn credit in the 
+course. **
+
+=== Prerequisite ===
+
+Probability Theory (MATH 501)
+
+=== Description ===
+
+This course is an introduction to the advanced concepts of probability theory. It covers topics such as: Measure theory, Probability spaces, Random variables, Conditional Expectations, Stochastic processes, Martingales, Limit Theorems Large deviations
+   
+The course is intended for students who have a strong foundation in probability theory.
+
+
+
+=== Recommended Texts ===
+
+
+Durrett "Probability: Theory and Examples" 5th edition, pdf available at [[https://services.math.duke.edu/~rtd/PTE/PTE5_011119.pdf|PTE]].
+
+
+
+
+=== Piazza===
+
+We will use Piazza ("http://piazza.com/") for communication. All announcements will be sent to the class using Piazza.
+ 
+
+
+=== Homework Policies === 
+
+The homework will not be graded with the exception of some marked problems.  The solution for these problems must be typed in LaTeX, typeset to pdf and submitted by the due date. The late or hand-written or non-LaTeX solutions will not be accepted. All homework problems can be on exams. 
+
+=== Exam === 
+There will be a midterm and a final exam focusing on the theoretical part of the course. Final is cumulative.
+
+=== Project ===
+You are supposed to prepare a project for this course and make a presentation on the project. 
+The project should cover some topic in probability theory. You can choose your own topic. It might be a topic, which is not covered by the lecturer, or it might be a recent paper in a mathematical journal.  
+You are supposed to give a 30-minute presentation on the topic, which should be a lecture to your fellow students. You may choose to do a blackboard lecture or a slide presentation, as you prefer.
+You presentation will be graded on the following criteria:
+
+    • Clarity: Your presentation should be clear and easy to understand.
+    • Engagement: Your presentation should be engaging and interesting.
+    • Answering questions: You should be able to answer questions from the audience about your topic.
+
+
+
+
+=== Grading ===
+  * Homework (25%)
+  * Midterm exam (25%)
+  * Project (25%)
+  * Final exam (25%)
+ 
+
+
+
+
+
+/*
+<h2>Data Analysis Contest</h2>
+<p>Students will compete against each other in a Data Analysis Contest. The competition will begin on Tuesday, Feburary 20 and can be completed in teams of 2 &ndash; 4 members. Grades will be based upon a progress report and a final report (one per team) as well as the contest results. Further details about the contest along with specific grading criteria will be given in a separate document and discussed in class.</p>
+*/
+
+
+
+
+
+=== Tentative schedule ===
+
+| Midterm | Oct 9 |
+| Project Proposal | due Oct 30 |
+| Preliminary report  | due Nov 13 |
+| Project presentations | Nov 27 - Dec 1 |
+| Final Report | due Dec 4 |
+| Final Exam | As scheduled by the University, Dec 11 - Dec 15 |
