@@ -27,6 +27,7 @@ NS_ROOT = "/p/people/kargin"
 SITEMAP_URL = f"{BASE}{NS_ROOT}/start?do=index"
 OUTDIR = Path(BASE_PREFIX.strip("/")) if BASE_PREFIX else Path(".")
 ASSET_DIR = OUTDIR / "assets"
+DEFAULT_TITLE = "Vladislav Kargin — Associate Professor, Mathematics & Statistics, Binghamton University"
 HEAD_HTML = """<!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8">
@@ -153,10 +154,14 @@ def ensure_dir(p: Path):
 def save_page(out_dir: Path, title: str, body_html: str, source_url: str):
     ensure_dir(out_dir)
     html = (
-    HEAD_HTML.format(title=title, base=BASE_PREFIX)
-    + body_html
-    + FOOT_HTML.format(source=source_url, stamp=formatdate(usegmt=True))
+        HEAD_HTML.replace("{title}", title).replace("{base}", BASE_PREFIX)
+        + body_html
+        + FOOT_HTML.replace("{source}", source_url).replace("{stamp}", formatdate(usegmt=True))
     )
+    path = out_dir / "index.html"
+    path.write_text(html, encoding="utf-8")
+    print(f"  wrote {path}")
+
 def download_asset(url: str) -> str:
     """Download to assets/ and return relative path; on failure, return normalized external URL."""
     ensure_dir(ASSET_DIR)
@@ -260,8 +265,10 @@ def rewrite_links(html: str, page_url: str) -> str:
 
 def title_from_html(html: str) -> str:
     soup = BeautifulSoup(html, "lxml")
-    h1 = soup.find(["h1","h2","h3"])
-    return h1.get_text(strip=True) if h1 else "Page"
+    h = soup.find(["h1","h2","h3","title"])
+    t = h.get_text(strip=True) if h else ""
+    return t or DEFAULT_TITLE
+
 
 def main():
     pages = list_namespace_pages()
