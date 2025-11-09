@@ -20,6 +20,45 @@ from bs4 import BeautifulSoup
 from email.utils import formatdate
 import shutil
 
+import re, shutil
+from pathlib import Path
+
+CV_CANDIDATE_LOCAL = None
+
+# Much broader: match any filename that includes "cv" or "vitae" before ".pdf"
+CV_NAME_RX = re.compile(r'(?i)(?:^|[/:])(?=[^/]*kargin)(?=[^/]*cv)[^/]*\.pdf$')
+
+def remember_cv_candidate(local_web_path: str, media_url: str, anchor_text: str):
+    """
+    local_web_path: '/bu/assets/abcd1234.pdf' returned by download_asset(...)
+    media_url: the 'media=' query value (may be 'people:kargin:cv_2024.pdf', etc.)
+    anchor_text: link text (e.g., 'CV (PDF)', 'Curriculum Vitae', etc.)
+    """
+    global CV_CANDIDATE_LOCAL
+
+    t = (anchor_text or "").lower()
+    m = (media_url or "").lower()
+
+    looks_like_cv = ("cv" in t) or ("vitae" in t) or CV_NAME_RX.search(m or "")
+    if not looks_like_cv:
+        return
+
+    # Convert site path -> local file path
+    rel = local_web_path.lstrip("/")          # 'bu/assets/abcd.pdf'
+    p = Path(rel)
+
+    # If you’re using a staging dir (bu_next), look there too
+    if not p.exists() and rel.startswith("bu/"):
+        parts = Path(rel).parts               # ('bu','assets','abcd.pdf', ...)
+        alt = Path("bu_next").joinpath(*parts[1:])
+        if alt.exists():
+            p = alt
+
+    if p.exists():
+        CV_CANDIDATE_LOCAL = p
+        print(f"  [cv] candidate matched: {p}")
+
+
 
 BASE = "https://www2.math.binghamton.edu"
 # put this near the top, after the constants
@@ -217,7 +256,24 @@ def rewrite_links(html: str, page_url: str) -> str:
             slug = safe_slug(urllib.parse.urlparse(href_abs).path)
             a["href"] = f"{BASE_PREFIX}/" if slug == "start" else f"{BASE_PREFIX}/{slug}/"
             continue
+        
+        # Dokuwiki media fetches (may wrap external URLs)
+        elif "/lib/exe/fetch.php" in href_abs:
+            qs = urllib.parse.parse_qs(urllib.parse.urlsplit(href_abs).query)
+            media = qs.get("media", [None])[0]
 
+            # If fetch.php wraps an external URL, just link out
+            if media and media.startswith(("http://", "https://")):
+                a["href"] = normalize_or_same(media)
+            else:
+                 # Internal BU media → download and link locally
+                local_web = download_asset(href_abs)     # e.g. '/bu/assets/abcd.pdf'
+                a["href"] = local_web
+                # If this looks like your CV, remember it for /cv.pdf syncing
+                remember_cv_candidate(local_web, media, a.get_text())
+            continue
+
+        '''
         # Dokuwiki media fetches (may wrap external URLs)
         if "/lib/exe/fetch.php" in href_abs:
             qs = urllib.parse.parse_qs(urllib.parse.urlsplit(href_abs).query)
@@ -227,7 +283,7 @@ def rewrite_links(html: str, page_url: str) -> str:
             else:
                 a["href"] = download_asset(href_abs)
             continue
-
+        '''
         # Everything else: external → normalize to https/new host
         a["href"] = normalize_or_same(href_abs)
 
@@ -291,8 +347,13 @@ def main():
         slug = safe_slug(urllib.parse.urlparse(url).path)
         outdir = OUTDIR / ("" if slug=="start" else slug)
         save_page(outdir, title, cleaned, url)
-    # after mirroring, sync the CV
-    sync_root_cv()
+    # After mirroring, sync cv.pdf at repo root if we detected a CV candidate
+    if CV_CANDIDATE_LOCAL and Path(CV_CANDIDATE_LOCAL).exists():
+        shutil.copy2(CV_CANDIDATE_LOCAL, Path("cv.pdf"))
+        print(f"  synced cv.pdf from {CV_CANDIDATE_LOCAL}")
+    else:
+        print("  [warn] no CV candidate found; leaving cv.pdf unchanged.")
+    #sync_root_cv()
     print("\nDone. Commit & push to publish on GitHub Pages.")
 
 if __name__ == "__main__":
