@@ -18,6 +18,7 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 from email.utils import formatdate
+import shutil
 
 
 BASE = "https://www2.math.binghamton.edu"
@@ -270,6 +271,15 @@ def title_from_html(html: str) -> str:
     return t or DEFAULT_TITLE
 
 
+def sync_root_cv():
+    assets_dir = OUTDIR / "assets"   # OUTDIR is 'bu' when BASE_PREFIX='/bu'
+    if not assets_dir.exists():
+        return
+    pdfs = sorted(assets_dir.glob("*.pdf"), key=lambda p: p.stat().st_mtime, reverse=True)
+    if pdfs:
+        shutil.copy2(pdfs[0], Path("cv.pdf"))
+        print(f"  synced cv.pdf from {pdfs[0].name}")
+
 def main():
     pages = list_namespace_pages()
     print(f"Found {len(pages)} pages under {NS_ROOT}")
@@ -281,6 +291,8 @@ def main():
         slug = safe_slug(urllib.parse.urlparse(url).path)
         outdir = OUTDIR / ("" if slug=="start" else slug)
         save_page(outdir, title, cleaned, url)
+    # after mirroring, sync the CV
+    sync_root_cv()
     print("\nDone. Commit & push to publish on GitHub Pages.")
 
 if __name__ == "__main__":
