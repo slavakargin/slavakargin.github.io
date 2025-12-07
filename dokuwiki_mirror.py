@@ -86,6 +86,8 @@ code,pre{{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation
 hr{{border:none; border-top:1px solid #ddd; margin:1.5rem 0}}
 small.muted{{color:#666}}
 </style>
+<script data-goatcounter="https://slavakargin.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 <script>
 window.MathJax={{tex:{{inlineMath:[['$','$'],['\\\\(','\\\\)']]}}}};
 </script>
