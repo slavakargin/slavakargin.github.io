@@ -159,36 +159,43 @@ def list_namespace_pages():
     pages = {f"{BASE}{NS_ROOT}/start"} | pages
     return sorted(pages)
 
+
 def fetch_clean_html(page_url: str) -> str:
-    # Prefer DocuWiki exporter (if enabled)
-    export_url = f"{page_url}?do=export_xhtml"
+    import time
+    headers = {
+        "Cache-Control": "no-cache",
+        "Pragma": "no-cache",
+        "User-Agent": "Mozilla/5.0 (slavakargin-mirror)"
+    }
+    ts = f"_ts={int(time.time())}"
+
+    # Prefer DokuWiki exporter (fresh copy)
+    sep = "&" if "?" in page_url else "?"
+    export_url = f"{page_url}{sep}do=export_xhtml&{ts}"
     try:
-        r = get(export_url)
+        r = get(export_url, headers=headers, timeout=30)
+        r.raise_for_status()
         text = r.text.strip()
-        # exporter often returns a full minimal HTML; that's perfect
         if "<html" in text.lower() or "<div" in text.lower():
             return text
     except Exception:
         pass
 
-    # Fallback: grab normal page and extract content area
-    r = get(page_url)
+    # Fallback: normal page (also cache-busted)
+    sep2 = "&" if "?" in page_url else "?"
+    fallback_url = f"{page_url}{sep2}{ts}"
+    r = get(fallback_url, headers=headers, timeout=30)
+    r.raise_for_status()
     soup = BeautifulSoup(r.text, "lxml")
+
     # Try common content containers
-    candidates = [
-        "#dokuwiki__content",    # default DokuWiki layout
-        "div.page",              # older Dokuwiki skins
-        "#content", "article"
-    ]
-    content = None
-    for sel in candidates:
+    for sel in ["#dokuwiki__content", "div.page", "#content", "article"]:
         content = soup.select_one(sel)
-        if content: break
-    if not content:
-        # fallback to body
-        content = soup.body or soup
-    # Return inner HTML
-    return str(content)
+        if content:
+            return str(content)
+
+    return str(soup.body or soup)
+
 
 def ensure_dir(p: Path):
     p.mkdir(parents=True, exist_ok=True)
