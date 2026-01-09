@@ -130,7 +130,8 @@ def normalize_external_url(u: str) -> str:
     return urllib.parse.urlunsplit((scheme, host, pu.path, pu.query, pu.fragment))
 
 def get(url, **kw):
-    r = session.get(url, timeout=30, **kw)
+    timeout = kw.pop("timeout", 30)   # take caller's timeout if provided
+    r = session.get(url, timeout=timeout, **kw)
     r.raise_for_status()
     return r
 
