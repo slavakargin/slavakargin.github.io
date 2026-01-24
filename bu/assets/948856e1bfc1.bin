@@ -1,60 +1,27 @@
-<!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>people:kargin:math471_spring2025</title>
-<link rel="preconnect" href="https://cdn.jsdelivr.net">
-<style>
-:root{{--max:900px}}
-body{{font:16px/1.55 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial; margin:0; padding:0;}}
-header,main,footer{{max-width:var(--max); margin:0 auto; padding:1rem;}}
-header h1{{margin:.2rem 0 0 0; font-size:1.35rem;}}
-nav a{{margin-right:.8rem}}
-main{{padding-top:0.25rem}}
-main img{{max-width:100%; height:auto}}
-code,pre{{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace}}
-hr{{border:none; border-top:1px solid #ddd; margin:1.5rem 0}}
-small.muted{{color:#666}}
-</style>
-<script data-goatcounter="https://slavakargin.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-<script>
-window.MathJax={{tex:{{inlineMath:[['$','$'],['\\(','\\)']]}}}};
-</script>
-<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-</head><body>
-<header>
-  <h1><a href="/index.html" style="text-decoration:none;color:inherit;">Vladislav Kargin</a></h1>
-  <nav>
-  <a href="/bu/">Home</a>
-  <a href="/bu/kargin_publications/">Publications</a>
-  <a href="/bu/letterinfo/">Letters</a>
-  </nav>
-</header>
-<main>
+
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
+<html lang="en" dir="ltr">
 <head>
-<meta charset="utf-8"/>
-<title>people:kargin:math471_spring2025</title>
-<meta content="DokuWiki" name="generator"/>
-<meta content="index,follow" name="robots"/>
-<meta content="2026-01-19T13:48:06-0500" name="date"/>
-<meta content="people,kargin,math471 spring2025" name="keywords"/>
-<link href="/bu/assets/b8e4b2aa1ce2.php" rel="search" title="Department of Mathematics and Statistics, Binghamton University" type="application/opensearchdescription+xml"/>
-<link href="https://www2.math.binghamton.edu/" rel="start"/>
-<link href="/bu/assets/8410d7f5907e.bin" rel="contents" title="Sitemap"/>
-<link href="https://www2.math.binghamton.edu/feed.php" rel="alternate" title="Recent Changes" type="application/rss+xml"/>
-<link href="https://www2.math.binghamton.edu/feed.php?mode=list&amp;ns=people:kargin" rel="alternate" title="Current Namespace" type="application/rss+xml"/>
-<link href="/bu/assets/a8828bc12d85.bin" rel="alternate" title="Plain HTML" type="text/html"/>
-<link href="/bu/assets/e81770489fa8.bin" rel="alternate" title="Wiki Markup" type="text/plain"/>
-<link href="/bu/assets/0e1baa813c41.bin" rel="canonical"/>
-<link href="/bu/assets/901208a1b070.php" rel="stylesheet" type="text/css"/>
+  <meta charset="utf-8" />
+  <title>people:kargin:math571_spring2026</title>
+<meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="date" content="2026-01-24T18:42:05-0500"/>
+<meta name="keywords" content="people,kargin,math571 spring2026"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="Department of Mathematics and Statistics, Binghamton University"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/p/people/kargin/math571_spring2026?do=index" title="Sitemap"/>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/feed.php?mode=list&amp;ns=people:kargin"/>
+<link rel="alternate" type="text/html" title="Plain HTML" href="/p/people/kargin/math571_spring2026?do=export_xhtml"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/p/people/kargin/math571_spring2026?do=export_raw"/>
+<link rel="canonical" href="https://www2.math.binghamton.edu/p/people/kargin/math571_spring2026"/>
+<link rel="stylesheet" type="text/css" href="/lib/exe/css.php?t=math&amp;tseed=1728394530"/>
 <script type="text/javascript">/*<![CDATA[*/
-var NS='people:kargin';var JSINFO = {"id":"people:kargin:math471_spring2025","namespace":"people:kargin","plugin_folded":{"hide":"hide","reveal":"reveal"},"plugin_codeprettify":{"loader_base":"\/lib\/plugins\/codeprettify\/google-code-prettify"},"showbookcreatorpagetool":false,"DOKU_COOKIE_PARAM":{"path":"\/","secure":false}};
+var NS='people:kargin';var JSINFO = {"id":"people:kargin:math571_spring2026","namespace":"people:kargin","plugin_folded":{"hide":"hide","reveal":"reveal"},"plugin_codeprettify":{"loader_base":"\/lib\/plugins\/codeprettify\/google-code-prettify"},"showbookcreatorpagetool":false,"DOKU_COOKIE_PARAM":{"path":"\/","secure":false}};
 /*!]]>*/</script>
-<script charset="utf-8" src="/bu/assets/ef1b85ed8dfe.php" type="text/javascript"></script>
-<script charset="utf-8" src="https://www2.math.binghamton.edu/lib/plugins/codeprettify/google-code-prettify/run_prettify.js?lang=css" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1728394530&amp;template=math"></script>
+<script type="text/javascript" charset="utf-8" src="/lib/plugins/codeprettify/google-code-prettify/run_prettify.js?lang=css"></script>
 <script type="text/x-mathjax-config">/*<![CDATA[*/
 MathJax.Hub.Config({
 
@@ -74,7 +41,7 @@ MathJax.Hub.Config({
 
 
 /*!]]>*/</script>
-<script charset="utf-8" src="https://www2.math.binghamton.edu/js/MathJax/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8" src="https://www2.math.binghamton.edu/js/MathJax/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div class="dokuwiki export">
@@ -82,6 +49,7 @@ MathJax.Hub.Config({
 <div id="dw__toc">
 <h3 class="toggle">Table of Contents</h3>
 <div>
+
 <ul class="toc">
 <li class="level1"><div class="li"><a href="#binghamton_university">Binghamton University</a></div></li>
 <li class="level1"><div class="li"><a href="#prerequisite">Prerequisite</a></div></li>
@@ -103,79 +71,103 @@ MathJax.Hub.Config({
 </div>
 </div>
 <!-- TOC END -->
+
 <h1 class="sectionedit1" id="math_571advanced_probability_spring_2026">Math 571: Advanced Probability — Spring 2026</h1>
 <div class="level1">
+
 </div>
 <!-- EDIT1 SECTION "Math 571: Advanced Probability — Spring 2026" [1-62] -->
 <h2 class="sectionedit2" id="binghamton_university">Binghamton University</h2>
 <div class="level2">
+
 <p>
 <strong>Instructor:</strong> Vladislav Kargin <br/>
+
 <strong>Office:</strong> WH-136 <br/>
+
 <strong>Meeting time and location:</strong> TR 8:00–9:30 AM, WH 329 <br/>
+
 <strong>Office hours:</strong> TR 10:00–11:00 AM
 </p>
-<hr/>
+<hr />
+
 <p>
 This course is a 4-credit course, which means that in addition to the scheduled lectures/discussions, students are expected to do at least 9.5 hours of course-related work each week during the semester. This includes things like: completing assigned readings, participating in lab sessions, studying for tests and examinations, preparing written assignments, and other tasks that must be completed to earn credit in the course.
 </p>
-<hr/>
+<hr />
+
 </div>
 <!-- EDIT2 SECTION "Binghamton University" [63-695] -->
 <h2 class="sectionedit3" id="prerequisite">Prerequisite</h2>
 <div class="level2">
+
 <p>
 Probability Theory (MATH 501)
 </p>
+
 </div>
 <!-- EDIT3 SECTION "Prerequisite" [696-752] -->
 <h2 class="sectionedit4" id="description">Description</h2>
 <div class="level2">
+
 <p>
 This course is an introduction to the advanced concepts of probability theory. It covers topics such as: Measure theory, Probability spaces, Random variables, Conditional Expectations, Stochastic processes, Martingales, Limit Theorems, Large deviations.
 </p>
+
 <p>
 The course is intended for students who have a strong foundation in probability theory.
 </p>
+
 </div>
 <!-- EDIT4 SECTION "Description" [753-1121] -->
 <h2 class="sectionedit5" id="recommended_text">Recommended Text</h2>
 <div class="level2">
+
 <p>
-Durrett, <em>Probability: Theory and Examples</em>, 5th edition. PDF available at <a class="urlextern" href="https://services.math.duke.edu/~rtd/PTE/PTE5_011119.pdf" title="https://services.math.duke.edu/~rtd/PTE/PTE5_011119.pdf">PTE</a>
+Durrett, <em>Probability: Theory and Examples</em>, 5th edition. PDF available at <a href="https://services.math.duke.edu/~rtd/PTE/PTE5_011119.pdf" class="urlextern" title="https://services.math.duke.edu/~rtd/PTE/PTE5_011119.pdf">PTE</a>
 </p>
+
 </div>
 <!-- EDIT5 SECTION "Recommended Text" [1122-1293] -->
 <h2 class="sectionedit6" id="lecture_notes">Lecture Notes</h2>
 <div class="level2">
+
 <p>
-Instructor's lecture notes will be provided and posted on Piazza.
+Instructor&#039;s lecture notes will be provided and posted on Piazza.
 </p>
+
 </div>
 <!-- EDIT6 SECTION "Lecture Notes" [1294-1387] -->
 <h2 class="sectionedit7" id="communication">Communication</h2>
 <div class="level2">
+
 <p>
-We will use Piazza (<a class="urlextern" href="https://piazza.com/" title="http://piazza.com/">piazza.com</a>) for communication. All announcements will be sent to the class using Piazza.
+We will use Piazza (<a href="http://piazza.com/" class="urlextern" title="http://piazza.com/">piazza.com</a>) for communication. All announcements will be sent to the class using Piazza.
 </p>
-<hr/>
+<hr />
+
 </div>
 <!-- EDIT7 SECTION "Communication" [1388-1553] -->
 <h2 class="sectionedit8" id="class_structure_and_participation">Class Structure and Participation</h2>
 <div class="level2">
+
 <p>
 Each class session is divided into two parts:
 </p>
+
 <p>
-<strong>Student-led segment (30–45 minutes):</strong> Students take on rotating roles to present and critically examine the day's material.
+<strong>Student-led segment (30–45 minutes):</strong> Students take on rotating roles to present and critically examine the day&#039;s material.
 </p>
+
 <p>
 <strong>Lecture segment (45–60 minutes):</strong> Instructor extends the material, addresses misconceptions, and covers additional applications.
 </p>
+
 </div>
 <!-- EDIT8 SECTION "Class Structure and Participation" [1554-1912] -->
 <h3 class="sectionedit9" id="roles">Roles</h3>
 <div class="level3">
+
 <p>
 Each session involves:
 </p>
@@ -186,11 +178,12 @@ Each session involves:
 </li>
 <li class="level1"><div class="li"> <strong>Scribe (1 student):</strong> Records theorem statements, key proof steps, questions raised, and instructor additions. Notes should NOT include names—they are learning material, not meeting minutes. Submit within 24–48 hours; instructor reviews and shares with everyone.</div>
 </li>
-<li class="level1"><div class="li"> <strong>Observers (3 students):</strong> Participate in discussion and ask questions; may be called on for examples or perspectives.</div>
+<li class="level1"><div class="li"> <strong>Observers (3-5 students):</strong> Participate in discussion and ask questions; may be called on for examples or perspectives.</div>
 </li>
 </ul>
+
 </div>
-<!-- EDIT9 SECTION "Roles" [1913-2636] -->
+<!-- EDIT9 SECTION "Roles" [1913-2638] -->
 <h3 class="sectionedit10" id="role_assignments">Role Assignments</h3>
 <div class="level3">
 <ul>
@@ -199,29 +192,37 @@ Each session involves:
 <li class="level1"><div class="li"> Within-pair role assignment: Students decide among themselves or flip a coin at the start of class.</div>
 </li>
 </ul>
+
 <p>
 Students are expected to pre-read the assigned material before each class.
 </p>
-<hr/>
+<hr />
+
 </div>
-<!-- EDIT10 SECTION "Role Assignments" [2637-2993] -->
+<!-- EDIT10 SECTION "Role Assignments" [2639-2995] -->
 <h2 class="sectionedit11" id="homework_policies">Homework Policies</h2>
 <div class="level2">
+
 <p>
 Weekly problem sets. I fully grade two or three problems (announced after submission); the others count for completion. Solutions must be concise (≤1 page per problem) and list the named results used (e.g., “DCT + UI”).
 </p>
+
 <p>
 <strong>Format:</strong> Starting HW 3, solutions must be typeset in LaTeX and submitted as PDF. Non-LaTeX submissions will be returned without grading.
 </p>
+
 <p>
-<strong>LaTeX resources:</strong> Homework templates will be posted on Overleaf. Students should create a free account at <a class="urlextern" href="https://www.overleaf.com/" title="https://www.overleaf.com/">Overleaf</a>.
+<strong>LaTeX resources:</strong> Homework templates will be posted on Overleaf. Students should create a free account at <a href="https://www.overleaf.com/" class="urlextern" title="https://www.overleaf.com/">Overleaf</a>.
 </p>
+
 <p>
 <strong>Submission:</strong> Submit via Gradescope as PDF by the due date.
 </p>
+
 <p>
 <strong>Late policy:</strong> 3 late-day tokens total for the term; beyond that, late work is not accepted.
 </p>
+
 <p>
 <strong>Rubric:</strong>
 </p>
@@ -239,84 +240,82 @@ Weekly problem sets. I fully grade two or three problems (announced after submis
 <li class="level1"><div class="li"> +0.5 exposition bonus possible (capped at 4)</div>
 </li>
 </ul>
+
 <p>
 I may invite you to brief board checks on your own solutions; these verify understanding and may adjust the HW score slightly.
 </p>
+
 <p>
 You may discuss ideas, but write your own solutions.
 </p>
-<hr/>
+<hr />
+
 </div>
-<!-- EDIT11 SECTION "Homework Policies" [2994-4091] -->
+<!-- EDIT11 SECTION "Homework Policies" [2996-4093] -->
 <h2 class="sectionedit12" id="exams">Exams</h2>
 <div class="level2">
+
 <p>
 <strong>Midterm:</strong> One in-class exam (open-book, no internet). Thursday, March 5, 2026.
 </p>
+
 <p>
 <strong>Final:</strong> Take-home exam with a brief (10–12 minutes) oral follow-up. I will choose one of your solutions and ask “why does this step hold?” / “where does the hypothesis matter?” questions. The final is cumulative.
 </p>
-<hr/>
+<hr />
+
 </div>
-<!-- EDIT12 SECTION "Exams" [4092-4418] -->
+<!-- EDIT12 SECTION "Exams" [4094-4420] -->
 <h2 class="sectionedit13" id="grading">Grading</h2>
 <div class="level2">
 <div class="table sectionedit14"><table class="inline">
-<tr class="row0">
-<th class="col0"> Component </th><th class="col1"> Weight </th>
-</tr>
-<tr class="row1">
-<td class="col0"> Homework </td><td class="col1"> 40% </td>
-</tr>
-<tr class="row2">
-<td class="col0"> Participation (presenter/skeptic/scribe) </td><td class="col1"> 10% </td>
-</tr>
-<tr class="row3">
-<td class="col0"> Midterm exam </td><td class="col1"> 15% </td>
-</tr>
-<tr class="row4">
-<td class="col0"> Final write-up </td><td class="col1"> 25% </td>
-</tr>
-<tr class="row5">
-<td class="col0"> Final oral follow-up </td><td class="col1"> 10% </td>
-</tr>
+	<tr class="row0">
+		<th class="col0"> Component </th><th class="col1"> Weight </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Homework </td><td class="col1"> 40% </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> Participation (presenter/skeptic/scribe) </td><td class="col1"> 10% </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> Midterm exam </td><td class="col1"> 15% </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> Final write-up </td><td class="col1"> 25% </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> Final oral follow-up </td><td class="col1"> 10% </td>
+	</tr>
 </table></div>
-<!-- EDIT14 TABLE [4440-4611] --><hr/>
+<!-- EDIT14 TABLE [4442-4613] --><hr />
+
 </div>
-<!-- EDIT13 SECTION "Grading" [4419-4618] -->
+<!-- EDIT13 SECTION "Grading" [4421-4620] -->
 <h2 class="sectionedit15" id="schedule">Schedule</h2>
 <div class="level2">
 <div class="table sectionedit16"><table class="inline">
-<tr class="row0">
-<th class="col0"> Event </th><th class="col1"> Date </th>
-</tr>
-<tr class="row1">
-<td class="col0"> Classes begin </td><td class="col1"> Tuesday, January 20 </td>
-</tr>
-<tr class="row2">
-<td class="col0"> Midterm </td><td class="col1"> Thursday, March 5 </td>
-</tr>
-<tr class="row3">
-<td class="col0"> Spring break </td><td class="col1"> March 28 – April 6 </td>
-</tr>
-<tr class="row4">
-<td class="col0"> Last day of classes </td><td class="col1"> Wednesday, May 6 </td>
-</tr>
-<tr class="row5">
-<td class="col0"> Final exam </td><td class="col1"> As scheduled by the University </td>
-</tr>
+	<tr class="row0">
+		<th class="col0"> Event </th><th class="col1"> Date </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Classes begin </td><td class="col1"> Tuesday, January 20 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> Midterm </td><td class="col1"> Thursday, March 5 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> Spring break </td><td class="col1"> March 28 – April 6 </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> Last day of classes </td><td class="col1"> Wednesday, May 6 </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> Final exam </td><td class="col1"> As scheduled by the University </td>
+	</tr>
 </table></div>
-<!-- EDIT16 TABLE [4641-4860] -->
+<!-- EDIT16 TABLE [4643-4862] -->
 </div>
-<!-- EDIT15 SECTION "Schedule" [4619-] --></div>
+<!-- EDIT15 SECTION "Schedule" [4621-] --></div>
 </body>
 </html>
-<hr>
-<p class="muted"><small class="muted">
-Mirrored from the Binghamton University Math &amp; Stats DocuWiki (people:kargin).
-Original pages © their authors; wiki license CC BY-NC-SA 3.0.
-Source: <a href="https://www2.math.binghamton.edu/p/people/kargin/math471_spring2025">https://www2.math.binghamton.edu/p/people/kargin/math471_spring2025</a>
-</small></p>
-</main>
-<footer><p><small>Last mirrored: Sat, 24 Jan 2026 23:57:16 GMT</small></p></footer>
-</body></html>

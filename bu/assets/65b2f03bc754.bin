@@ -1,0 +1,119 @@
+
+====== Math 571: Advanced Probability — Spring 2026 ======
+
+===== Binghamton University =====
+
+**Instructor:** Vladislav Kargin \\
+**Office:** WH-136 \\
+**Meeting time and location:** TR 8:00–9:30 AM, WH 329 \\
+**Office hours:** TR 10:00–11:00 AM
+
+----
+
+This course is a 4-credit course, which means that in addition to the scheduled lectures/discussions, students are expected to do at least 9.5 hours of course-related work each week during the semester. This includes things like: completing assigned readings, participating in lab sessions, studying for tests and examinations, preparing written assignments, and other tasks that must be completed to earn credit in the course.
+
+----
+
+===== Prerequisite =====
+
+Probability Theory (MATH 501)
+
+===== Description =====
+
+This course is an introduction to the advanced concepts of probability theory. It covers topics such as: Measure theory, Probability spaces, Random variables, Conditional Expectations, Stochastic processes, Martingales, Limit Theorems, Large deviations.
+
+The course is intended for students who have a strong foundation in probability theory.
+
+===== Recommended Text =====
+
+Durrett, //Probability: Theory and Examples//, 5th edition. PDF available at [[https://services.math.duke.edu/~rtd/PTE/PTE5_011119.pdf|PTE]]
+
+===== Lecture Notes =====
+
+Instructor's lecture notes will be provided and posted on Piazza.
+
+===== Communication =====
+
+We will use Piazza ([[http://piazza.com/|piazza.com]]) for communication. All announcements will be sent to the class using Piazza.
+
+----
+
+===== Class Structure and Participation =====
+
+Each class session is divided into two parts:
+
+**Student-led segment (30–45 minutes):** Students take on rotating roles to present and critically examine the day's material.
+
+**Lecture segment (45–60 minutes):** Instructor extends the material, addresses misconceptions, and covers additional applications.
+
+==== Roles ====
+
+Each session involves:
+
+  * **Presenters (2 students):** One states definitions, notation, and theorem statements; the other outlines the proof and provides an example.
+  * **Skeptics (2 students):** One checks correctness and catches errors; the other proposes counterexamples when assumptions are weakened.
+  * **Scribe (1 student):** Records theorem statements, key proof steps, questions raised, and instructor additions. Notes should NOT include names—they are learning material, not meeting minutes. Submit within 24–48 hours; instructor reviews and shares with everyone.
+  * **Observers (3-5 students):** Participate in discussion and ask questions; may be called on for examples or perspectives.
+
+==== Role Assignments ====
+
+  * Sunday evening: Instructor announces which pairs are presenters and skeptics for Tuesday and Thursday, and which results will be covered.
+  * Within-pair role assignment: Students decide among themselves or flip a coin at the start of class.
+
+Students are expected to pre-read the assigned material before each class.
+
+----
+
+===== Homework Policies =====
+
+Weekly problem sets. I fully grade two or three problems (announced after submission); the others count for completion. Solutions must be concise (≤1 page per problem) and list the named results used (e.g., "DCT + UI").
+
+**Format:** Starting HW 3, solutions must be typeset in LaTeX and submitted as PDF. Non-LaTeX submissions will be returned without grading.
+
+**LaTeX resources:** Homework templates will be posted on Overleaf. Students should create a free account at [[https://www.overleaf.com/|Overleaf]].
+
+**Submission:** Submit via Gradescope as PDF by the due date.
+
+**Late policy:** 3 late-day tokens total for the term; beyond that, late work is not accepted.
+
+**Rubric:**
+  * 4 = correct & clear
+  * 3 = essentially correct (minor gap)
+  * 2 = right idea with major gap
+  * 1 = meaningful progress
+  * 0 = off-track
+  * +0.5 exposition bonus possible (capped at 4)
+
+I may invite you to brief board checks on your own solutions; these verify understanding and may adjust the HW score slightly.
+
+You may discuss ideas, but write your own solutions.
+
+----
+
+===== Exams =====
+
+**Midterm:** One in-class exam (open-book, no internet). Thursday, March 5, 2026.
+
+**Final:** Take-home exam with a brief (10–12 minutes) oral follow-up. I will choose one of your solutions and ask "why does this step hold?" / "where does the hypothesis matter?" questions. The final is cumulative.
+
+----
+
+===== Grading =====
+
+^ Component ^ Weight ^
+| Homework | 40% |
+| Participation (presenter/skeptic/scribe) | 10% |
+| Midterm exam | 15% |
+| Final write-up | 25% |
+| Final oral follow-up | 10% |
+
+----
+
+===== Schedule =====
+
+^ Event ^ Date ^
+| Classes begin | Tuesday, January 20 |
+| Midterm | Thursday, March 5 |
+| Spring break | March 28 – April 6 |
+| Last day of classes | Wednesday, May 6 |
+| Final exam | As scheduled by the University |
