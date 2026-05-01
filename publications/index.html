@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Publications — Vladislav Kargin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Journal papers and preprints by Vladislav Kargin (Binghamton University): probability, random matrices, free probability, random trees, and more.">
+  <meta property="og:title" content="Publications — Vladislav Kargin">
+  <meta property="og:description" content="Journal papers and preprints by Vladislav Kargin.">
+  <meta property="og:url" content="https://slavakargin.github.io/publications/">
+  <link rel="canonical" href="https://slavakargin.github.io/publications/">
+
+  <script data-goatcounter="https://slavakargin.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+  <link rel="icon" href="/images/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+  <script>
+    window.MathJax = { tex: { inlineMath: [['$','$'], ['\\(','\\)']] } };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root { --max: 960px; --link: #0b57d0; --muted: #666; --border: #e7e7e7; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial; color: #111; }
+    header, main, footer { max-width: var(--max); margin: 0 auto; padding: 1rem; }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+    .brand { font-weight: 700; font-size: 1.15rem; letter-spacing: .2px; text-decoration: none; color: inherit; }
+    nav a { text-decoration: none; margin-left: 1rem; color: var(--link); }
+    nav a:first-child { margin-left: 0; }
+    h1 { margin: .3rem 0 .4rem; font-size: 1.6rem; }
+    h2 { margin: 1.6rem 0 .6rem; font-size: 1.25rem; padding-bottom: .25rem; border-bottom: 1px solid var(--border); }
+    a { color: var(--link); }
+
+    .lead { color: #333; margin: 0 0 .9rem; }
+    .legend { color: var(--muted); font-size: .95rem; margin: 0 0 1rem; }
+    .marker { font-style: normal; }
+
+    .yearnav {
+      display: flex; flex-wrap: wrap; gap: .35rem .55rem;
+      padding: .65rem .8rem; margin: .25rem 0 1rem;
+      border: 1px solid var(--border); border-radius: 12px; background: #fafafa;
+      font-size: .92rem;
+    }
+    .yearnav a { text-decoration: none; }
+    .yearnav span { color: var(--muted); margin-right: .25rem; }
+
+    ul.papers { list-style: none; padding: 0; margin: 0; }
+    ul.papers > li { margin: 0 0 1.05rem; padding: 0; }
+    .title { font-weight: 600; }
+    .meta { color: #333; }
+    .links { color: var(--muted); }
+    .links a { margin-right: .15rem; }
+    .links .sep { color: #bbb; margin: 0 .35rem; }
+    .note { color: var(--muted); font-style: italic; font-size: .95rem; margin-top: .15rem; }
+
+    footer { border-top: 1px solid #eee; color: var(--muted); font-size: .95rem; }
+    @media (max-width: 640px) {
+      header { gap: .5rem; }
+      nav { width: 100%; }
+      nav a:first-child { margin-left: 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="/">Vladislav Kargin</a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/publications/">Publications</a>
+      <a href="/bu/calculations/">Calculations</a>
+      <a href="/bu/">BU Mirror</a>
+      <a href="/cv.pdf" data-goatcounter-click="cv-download">CV (PDF)</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Publications</h1>
+    <p class="lead">
+      Journal papers and preprints. Most are linked to the published version
+      (PDF), the journal page (DOI), or the arXiv preprint.
+    </p>
+    <p class="legend">
+      <span class="marker" aria-hidden="true">🎲</span> random matrices
+      &nbsp;·&nbsp;
+      <span class="marker" aria-hidden="true">♥</span> free probability
+    </p>
+
+    <nav class="yearnav" aria-label="Jump to year">
+      <span>Jump to:</span>
+      <a href="#y2026">2026</a>
+      <a href="#y2025">2025</a>
+      <a href="#y2024">2024</a>
+      <a href="#y2023">2023</a>
+      <a href="#y2020">2020</a>
+      <a href="#y2018">2018</a>
+      <a href="#y2016">2016</a>
+      <a href="#y2015">2015</a>
+      <a href="#y2014">2014</a>
+      <a href="#y2013">2013</a>
+      <a href="#y2012">2012</a>
+      <a href="#y2011">2011</a>
+      <a href="#y2010">2010</a>
+      <a href="#y2009">2009</a>
+      <a href="#y2008">2008</a>
+      <a href="#y2007">2007</a>
+      <a href="#y2005">2005</a>
+      <a href="#y2003">2003</a>
+      <a href="#y2002">2002</a>
+    </nav>
+
+    <h2 id="y2026">2026</h2>
+    <ul class="papers">
+      <li>
+        <div class="title">The smallest singular value of large random rectangular Toeplitz and circulant matrices <span class="marker" aria-label="random matrices">🎲</span></div>
+        <div class="meta">(joint with A. Onatski)<br>
+          <em>Electronic Journal of Probability</em> <strong>31</strong> (2026), #2, 1–30.</div>
+        <div class="links"><a href="https://doi.org/10.1214/25-EJP1462">DOI: 10.1214/25-EJP1462</a></div>
+      </li>
+    </ul>
+
+    <h2 id="y2025">2025</h2>
+    <ul class="papers">
+      <li>
+        <div class="title">An upper bound on the per-tile entropy of ribbon tilings</div>
+        <div class="meta">(joint with S. R. Blackburn and Y. Chen)<br>
+          <em>Combinatorial Theory</em> <strong>5</strong> (2025), #14, 1–10.</div>
+        <div class="links">
+          <a href="/bu/assets/d0a85022b494.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://doi.org/10.5070/C65365562">DOI: 10.5070/C65365562</a>
+        </div>
+      </li>
+    </ul>
+
+    <h2 id="y2024">2024</h2>
+    <ul class="papers">
+      <li>
+        <div class="title">On the joint distribution of the area and the number of peaks for Bernoulli excursions</div>
+        <div class="meta"><em>Bernoulli</em> <strong>30</strong> (2024), 2700–2720.</div>
+        <div class="links">
+          <a href="/bu/assets/6329c6ae4d0b.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://doi.org/10.3150/23-BEJ1691">DOI: 10.3150/23-BEJ1691</a>
+        </div>
+      </li>
+    </ul>
+
+    <h2 id="y2023">2023</h2>
+    <ul class="papers">
+      <li>
+        <div class="title">Scaling limits of slim and fat trees</div>
+        <div class="meta"><em>Journal of Theoretical Probability</em> <strong>36</strong> (2023), 2192–2228.</div>
+        <div class="links">
+          <a href="/bu/assets/f1ec4fd2c968.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://doi.org/10.1007/s10959-023-01261-w">DOI: 10.1007/s10959-023-01261-w</a>
+        </div>
+      </li>
+      <li>
+        <div class="title">The number of ribbon tilings for strips</div>
+        <div class="meta">(joint with Y. Chen)<br>
+          <em>Discrete Applied Mathematics</em> <strong>340</strong> (2023), 85–103.</div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2307.00767">arXiv: 2307.00767</a>
+          <span class="sep">·</span>
+          <a href="https://doi.org/10.1016/j.dam.2023.06.045">Journal link (paywall)</a>
+        </div>
+      </li>
+      <li>
+        <div class="title">On enumeration and entropy of ribbon tilings</div>
+        <div class="meta">(joint with Y. Chen)<br>
+          <em>Electronic Journal of Combinatorics</em> <strong>30</strong>(2) (2023), P2.15.</div>
+        <div class="links">
+          <a href="/bu/assets/59c8c75e8aa7.pdf">PDF (journal version)</a>
+        </div>
+      </li>
+    </ul>
+
+    <h2 id="y2020">2020</h2>
+    <ul class="papers">
+      <li>
+        <div class="title">Cycles in random meander systems</div>
+        <div class="meta"><em>Journal of Statistical Physics</em> <strong>181</strong> (2020), 2322–2345.</div>
+        <div class="links">
+          <a href="/bu/assets/7c69caa6acda.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://arxiv.org/abs/2011.13449">arXiv: 2011.13449</a>
+        </div>
+      </li>
+    </ul>
+
+    <h2 id="y2018">2018</h2>
+    <ul class="papers">
+      <li>
+        <div class="title">A 3D Ginibre point field</div>
+        <div class="meta"><em>Journal of Statistical Physics</em> <strong>171</strong> (2018), 1067–1095.</div>
+        <div class="links">
+          <a href="/bu/assets/8b99c7c7ee0d.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://arxiv.org/abs/1705.03118">arXiv: 1705.03118</a>
+        </div>
+      </li>
+    </ul>
+
+    <h2 id="y2016">2016</h2>
+    <ul class="papers">
+      <li>
+        <div class="title">On variation of word frequencies in Russian literary texts</div>
+        <div class="meta"><em>Physica A: Statistical Mechanics and its Applications</em> <strong>445</strong> (2016), 328–334.</div>
+        <div class="links">
+          <a href="/bu/assets/2b650d3b19d4.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://arxiv.org/abs/1503.00339">arXiv: 1503.00339</a>
+        </div>
+      </li>
+    </ul>
+
+    <h2 id="y2015">2015</h2>
+    <ul class="papers">
+      <li>
+        <div class="title">Limit theorems for linear eigenvalue statistics of overlapping matrices <span class="marker" aria-label="random matrices">🎲</span></div>
+        <div class="meta"><em>Electronic Journal of Probability</em> <strong>20</strong> (2015), Art. 121, 1–30.</div>
+        <div class="links">
+          <a href="/bu/assets/8a403a88c0d8.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://arxiv.org/abs/1407.4743">arXiv: 1407.4743</a>
+        </div>
+      </li>
+      <li>
+        <div class="title">On estimation in the reduced-rank regression with a large number of responses and predictors <span class="marker" aria-label="random matrices">🎲</span></div>
+        <div class="meta"><em>Journal of Multivariate Analysis</em> <strong>140</strong> (2015), 377–394.</div>
+        <div class="links">
+          <a href="/bu/assets/86d98e7fc015.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://arxiv.org/abs/1409.6779">arXiv: 1409.6779</a>
+        </div>
+      </li>
+      <li>
+        <div class="title">Subordination of the resolvent for a sum of random matrices <span class="marker" aria-label="random matrices">🎲</span></div>
+        <div class="meta"><em>Annals of Probability</em> <strong>43</strong> (2015), 2119–2150.</div>
+        <div class="links">
+          <a href="/bu/assets/4f4aef2a69d8.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://arxiv.org/abs/1109.5818">arXiv: 1109.5818</a>
+        </div>
+      </li>
+    </ul>
+
+    <h2 id="y2014">2014</h2>
+    <ul class="papers">
+      <li>
+        <div class="title">On the largest Lyapunov exponent for products of Gaussian matrices <span class="marker" aria-label="random matrices">🎲</span></div>
+        <div class="meta"><em>Journal of Statistical Physics</em> <strong>157</strong> (2014), 70–83.</div>
+        <div class="links">
+          <a href="/bu/assets/ea434c677812.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://arxiv.org/abs/1306.6576">arXiv: 1306.6576</a>
+        </div>
+      </li>
+      <li>
+        <div class="title">Statistical properties of zeta functions' zeros</div>
+        <div class="meta"><em>Probability Surveys</em> <strong>11</strong> (2014), 121–160.</div>
+        <div class="links">
+          <a href="/bu/assets/57bd16d649a8.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://arxiv.org/abs/1302.1452">arXiv: 1302.1452</a>
+        </div>
+      </li>
+      <li>
+        <div class="title">On Pfaffian random point fields</div>
+        <div class="meta"><em>Journal of Statistical Physics</em> <strong>154</strong> (2014), 681–704.</div>
+        <div class="links">
+          <a href="/bu/assets/585ad42646df.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://arxiv.org/abs/1210.6603">arXiv: 1210.6603</a>
+        </div>
+      </li>
+    </ul>
+
+    <h2 id="y2013">2013</h2>
+    <ul class="papers">
+      <li>
+        <div class="title">An inequality for the distance between densities of free convolutions <span class="marker" aria-label="free probability">♥</span></div>
+        <div class="meta"><em>Annals of Probability</em> <strong>41</strong> (2013), 3241–3260.</div>
+        <div class="links">
+          <a href="/bu/assets/2d77ac009d7f.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://arxiv.org/abs/1107.0477">arXiv: 1107.0477</a>
+        </div>
+      </li>
+      <li>
+        <div class="title">On fluctuations of Riemann's zeta zeros</div>
+        <div class="meta"><em>Probability Theory and Related Fields</em> <strong>157</strong> (2013), 575–604.</div>
+        <div class="links">
+          <a href="/bu/assets/7b01a9c0435f.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://arxiv.org/abs/1203.5309">arXiv: 1203.5309</a>
+        </div>
+      </li>
+    </ul>
+
+    <h2 id="y2012">2012</h2>
+    <ul class="papers">
+      <li>
+        <div class="title">A concentration inequality and a local law for the sum of two random matrices <span class="marker" aria-label="random matrices">🎲</span></div>
+        <div class="meta"><em>Probability Theory and Related Fields</em> <strong>154</strong> (2012), 677–702.</div>
+        <div class="links">
+          <a href="/bu/assets/07fe3798d723.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://arxiv.org/abs/1010.0353">arXiv: 1010.0353</a>
+        </div>
+      </li>
+      <li>
+        <div class="title">On eigenvalues of the sum of two random projections <span class="marker" aria-label="random matrices">🎲</span></div>
+        <div class="meta"><em>Journal of Statistical Physics</em> <strong>149</strong> (2012), 246–258.</div>
+        <div class="links">
+          <a href="/bu/assets/a8125f57f1ea.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://arxiv.org/abs/1205.0993">arXiv: 1205.0993</a>
+        </div>
+      </li>
+    </ul>
+
+    <h2 id="y2011">2011</h2>
+    <ul class="papers">
+      <li>
+        <div class="title">On free stochastic differential equations <span class="marker" aria-label="free probability">♥</span></div>
+        <div class="meta"><em>Journal of Theoretical Probability</em> <strong>24</strong> (2011), 821–848.</div>
+        <div class="links">
+          <a href="/bu/assets/0c99d3dd923f.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://arxiv.org/abs/1101.2697">arXiv: 1101.2697</a>
+        </div>
+      </li>
+      <li>
+        <div class="title">Relaxation time is monotone in temperature in the mean-field Ising model</div>
+        <div class="meta"><em>Statistics and Probability Letters</em> <strong>81</strong> (2011), 1094–1097.</div>
+        <div class="links">
+          <a href="/bu/assets/8a19bbcd51e5.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://arxiv.org/abs/1103.0327">arXiv: 1103.0327</a>
+        </div>
+      </li>
+    </ul>
+
+    <h2 id="y2010">2010</h2>
+    <ul class="papers">
+      <li>
+        <div class="title">Free point processes and free extreme values <span class="marker" aria-label="free probability">♥</span></div>
+        <div class="meta">(joint with G. Ben Arous)<br>
+          <em>Probability Theory and Related Fields</em> <strong>147</strong> (2010), 161–183.</div>
+        <div class="links">
+          <a href="/bu/assets/f6c63e49f309.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://arxiv.org/abs/0903.2672">arXiv: 0903.2672</a>
+        </div>
+      </li>
+      <li>
+        <div class="title">Bounds for mixing time of quantum walks on finite graphs</div>
+        <div class="meta"><em>Journal of Physics A: Mathematical and Theoretical</em> <strong>43</strong> (2010), 335302.</div>
+        <div class="links">
+          <a href="/bu/assets/e116647c79d9.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://arxiv.org/abs/1004.0188">arXiv: 1004.0188</a>
+        </div>
+      </li>
+      <li>
+        <div class="title">Continuous-time quantum walk on integer lattices and homogeneous trees</div>
+        <div class="meta"><em>Journal of Statistical Physics</em> <strong>140</strong> (2010), 393–408.</div>
+        <div class="links">
+          <a href="/bu/assets/7d0206211e22.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://arxiv.org/abs/0912.0232">arXiv: 0912.0232</a>
+        </div>
+      </li>
+      <li>
+        <div class="title">Products of random matrices: Dimension and growth in norm <span class="marker" aria-label="random matrices">🎲</span></div>
+        <div class="meta"><em>Annals of Applied Probability</em> <strong>20</strong> (2010), 890–906.</div>
+        <div class="links">
+          <a href="/bu/assets/06b7428a0755.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://arxiv.org/abs/0903.0632">arXiv: 0903.0632</a>
+        </div>
+      </li>
+    </ul>
+
+    <h2 id="y2009">2009</h2>
+    <ul class="papers">
+      <li>
+        <div class="title">Spectrum of random Toeplitz matrices with band structure <span class="marker" aria-label="random matrices">🎲</span></div>
+        <div class="meta"><em>Electronic Communications in Probability</em> <strong>14</strong> (2009), 412–423.</div>
+        <div class="links">
+          <a href="/bu/assets/cfe4a63c1080.pdf">PDF (journal version)</a>
+        </div>
+      </li>
+    </ul>
+
+    <h2 id="y2008">2008</h2>
+    <ul class="papers">
+      <li>
+        <div class="title">Curve forecasting by functional autoregression</div>
+        <div class="meta">(joint with A. Onatski)<br>
+          <em>Journal of Multivariate Analysis</em> <strong>99</strong> (2008), 2508–2526.</div>
+        <div class="links">
+          <a href="https://www.prismnet.com/~slava/papers/banterm_final%20journal%20version.pdf">PDF (journal version)</a>
+        </div>
+      </li>
+      <li>
+        <div class="title">Lyapunov exponents of free operators <span class="marker" aria-label="free probability">♥</span></div>
+        <div class="meta"><em>Journal of Functional Analysis</em> <strong>255</strong> (2008), 1874–1888.</div>
+        <div class="links">
+          <a href="/bu/assets/85b53dd73b7d.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://arxiv.org/abs/0712.1378">arXiv: 0712.1378</a>
+        </div>
+      </li>
+      <li>
+        <div class="title">A limit theorem for products of free unitary operators <span class="marker" aria-label="free probability">♥</span></div>
+        <div class="meta"><em>Probability Theory and Related Fields</em> <strong>141</strong> (2008), 603–623.</div>
+        <div class="links">
+          <a href="/bu/assets/5dc036da7734.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://arxiv.org/abs/0805.0374">arXiv: 0805.0374</a>
+        </div>
+      </li>
+      <li>
+        <div class="title">On the asymptotic growth of the support of free multiplicative convolutions <span class="marker" aria-label="free probability">♥</span></div>
+        <div class="meta"><em>Electronic Communications in Probability</em> <strong>13</strong> (2008), 415–421.</div>
+        <div class="links">
+          <a href="/bu/assets/08eb85904e00.pdf">PDF (journal version)</a>
+        </div>
+      </li>
+      <li>
+        <div class="title">Coordination Games with Quantum Correlations</div>
+        <div class="meta"><em>International Journal of Game Theory</em> <strong>37</strong> (2008), 211–218.</div>
+        <div class="links">
+          <a href="/bu/assets/2d2c28a77468.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://www.prismnet.com/~slava/papers/quantgame21.pdf">Preliminary version</a>
+        </div>
+      </li>
+    </ul>
+
+    <h2 id="y2007">2007</h2>
+    <ul class="papers">
+      <li>
+        <div class="title">The norm of products of free random variables <span class="marker" aria-label="free probability">♥</span></div>
+        <div class="meta"><em>Probability Theory and Related Fields</em> <strong>139</strong> (2007), 397–413.</div>
+        <div class="links">
+          <a href="/bu/assets/30846605c032.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://arxiv.org/abs/math/0611593">arXiv: math/0611593</a>
+        </div>
+      </li>
+      <li>
+        <div class="title">A proof of a non-commutative central limit theorem by the Lindeberg method <span class="marker" aria-label="free probability">♥</span></div>
+        <div class="meta"><em>Electronic Communications in Probability</em> <strong>12</strong> (2007), 36–50.</div>
+        <div class="links">
+          <a href="/bu/assets/d320171dac0f.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://arxiv.org/abs/math/0703345">arXiv: math/0703345</a>
+        </div>
+      </li>
+      <li>
+        <div class="title">Berry-Esseen for free random variables <span class="marker" aria-label="free probability">♥</span></div>
+        <div class="meta"><em>Journal of Theoretical Probability</em> <strong>20</strong> (2007), 381–395.</div>
+        <div class="links">
+          <a href="/bu/assets/a8811ce83313.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://arxiv.org/abs/math.PR/0610072">arXiv: math.PR/0610072</a>
+        </div>
+        <div class="note">Note: this paper has a mistake; see Theorem 2.4 in Chistyakov–Götze (Ann. Probab. 36 (2008), 54–90).</div>
+      </li>
+      <li>
+        <div class="title">On superconvergence of convolutions of free random variables <span class="marker" aria-label="free probability">♥</span></div>
+        <div class="meta"><em>Annals of Probability</em> <strong>35</strong> (2007), 1931–1949.</div>
+        <div class="links">
+          <a href="/bu/assets/6c16ae077169.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://arxiv.org/abs/math.PR/0610075">arXiv: math.PR/0610075</a>
+        </div>
+      </li>
+      <li>
+        <div class="title">A large deviation inequality for vector functions on finite reversible Markov chains</div>
+        <div class="meta"><em>Annals of Applied Probability</em> <strong>17</strong> (2007), 1202–1221.</div>
+        <div class="links">
+          <a href="/bu/assets/52141c7f1810.pdf">PDF (journal version)</a>
+          <span class="sep">·</span>
+          <a href="https://arxiv.org/abs/math/0508538">arXiv: math/0508538</a>
+        </div>
+        <div class="note">Note: published version contains a gap; the original correct proof is in <a href="/bu/assets/a5cf545aa91f.pdf">arXiv v1 (PDF)</a>.</div>
+      </li>
+    </ul>
+
+    <h2 id="y2005">2005</h2>
+    <ul class="papers">
+      <li>
+        <div class="title">On the Chernoff bound for efficiency of quantum hypothesis testing</div>
+        <div class="meta"><em>Annals of Statistics</em> <strong>33</strong> (2005), 959–976.</div>
+        <div class="links">
+          <a href="/bu/assets/038824740409.pdf">PDF (journal version)</a>
+        </div>
+      </li>
+      <li>
+        <div class="title">Lattice Option Pricing by Multidimensional Interpolation</div>
+        <div class="meta"><em>Mathematical Finance</em> <strong>15</strong> (2005), 635–647.</div>
+        <div class="links">
+          <a href="/bu/assets/5baf82e353d4.pdf">PDF (journal proof version)</a>
+        </div>
+      </li>
+      <li>
+        <div class="title">Uncertainty of the Shapley Value</div>
+        <div class="meta"><em>International Game Theory Review</em> <strong>7</strong>(4) (2005), 517–529.</div>
+        <div class="links">
+          <a href="/bu/assets/8d0af7641f34.pdf">PDF (journal proof version)</a>
+        </div>
+      </li>
+    </ul>
+
+    <h2 id="y2003">2003</h2>
+    <ul class="papers">
+      <li>
+        <div class="title">Prevention of Herding by Experts</div>
+        <div class="meta"><em>Economics Letters</em> <strong>78</strong>(3) (2003), 401–407.</div>
+        <div class="links">
+          <a href="/bu/assets/dd695bec7000.pdf">PDF (journal proof version)</a>
+        </div>
+      </li>
+      <li>
+        <div class="title">Optimal Asset Allocation with Asymptotic Criteria</div>
+        <div class="meta"><em>IJTAF</em> <strong>6</strong>(6) (2003), 593–604.</div>
+        <div class="links">
+          <a href="/bu/assets/28e4f6ddeb34.pdf">PDF (arXiv version)</a>
+        </div>
+      </li>
+    </ul>
+
+    <h2 id="y2002">2002</h2>
+    <ul class="papers">
+      <li>
+        <div class="title">Value Investing in Emerging Markets: Risks and Benefits</div>
+        <div class="meta"><em>Emerging Markets Review</em> <strong>3</strong>(3) (2002), 233–244.</div>
+        <div class="links">
+          <a href="/bu/assets/9b92a4f25e55.pdf">PDF (journal proof version)</a>
+        </div>
+      </li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>
+      <a href="https://scholar.google.com/citations?user=8DMiaVMAAAAJ">Google Scholar</a> ·
+      <a href="https://orcid.org/0000-0002-3408-544X">ORCID</a> ·
+      <a href="https://arxiv.org/a/kargin_v_1">arXiv author page</a>
+    </p>
+    <p>© Vladislav Kargin.</p>
+  </footer>
+</body>
+</html>

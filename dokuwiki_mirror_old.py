@@ -65,13 +65,6 @@ BASE = "https://www2.math.binghamton.edu"
 BASE_PREFIX = "/bu"   # "" means root; "/bu" means mirror lives at /bu/
 NS_ROOT = "/p/people/kargin"
 SITEMAP_URL = f"{BASE}{NS_ROOT}/start?do=index"
-
-# Slugs that the mirror script must NOT overwrite. These are pages where the
-# GitHub copy has become canonical (e.g. moved out of /bu/ to a top-level URL,
-# or replaced with a hand-maintained redirect stub).
-SKIP_SLUGS = {
-    "kargin_publications",   # canonical at /publications/; /bu/kargin_publications/ is a redirect stub
-}
 OUTDIR = Path(BASE_PREFIX.strip("/")) if BASE_PREFIX else Path(".")
 ASSET_DIR = OUTDIR / "assets"
 DEFAULT_TITLE = "Vladislav Kargin — Associate Professor, Mathematics & Statistics, Binghamton University"
@@ -357,14 +350,11 @@ def main():
     pages = list_namespace_pages()
     print(f"Found {len(pages)} pages under {NS_ROOT}")
     for url in pages:
-        slug = safe_slug(urllib.parse.urlparse(url).path)
-        if slug in SKIP_SLUGS:
-            print(f"\n=== {url}\n  [skip] '{slug}' is in SKIP_SLUGS; not overwriting local copy")
-            continue
         print(f"\n=== {url}")
         raw = fetch_clean_html(url)
         cleaned = rewrite_links(raw, url)
         title = title_from_html(cleaned)
+        slug = safe_slug(urllib.parse.urlparse(url).path)
         outdir = OUTDIR / ("" if slug=="start" else slug)
         save_page(outdir, title, cleaned, url)
     # After mirroring, sync cv.pdf at repo root if we detected a CV candidate
