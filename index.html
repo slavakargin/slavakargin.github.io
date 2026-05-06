@@ -38,6 +38,18 @@
     .card a { display: inline-block; font-weight: 600; text-decoration: none; color: #0b57d0; }
     .muted { color: #666; }
     footer { border-top: 1px solid #eee; color: #666; font-size: .95rem; }
+    .seminars { margin: 1rem 0 1.25rem; padding: 1rem 1.1rem; border: 1px solid #e7e7e7; border-radius: 14px; background: #fff; }
+    .seminars h2 { margin: 0 0 .6rem; font-size: 1.05rem; }
+    .seminars table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+    .seminars th { text-align: left; padding: .35rem .5rem; background: #f3f5f8; font-weight: 600; border-bottom: 1px solid #e7e7e7; }
+    .seminars td { padding: .35rem .5rem; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
+    .seminars tr:last-child td { border-bottom: 0; }
+    .seminars a { color: #0b57d0; text-decoration: none; }
+    .seminars a:hover { text-decoration: underline; }
+    .seminars .special td { background: #fff8e1; }
+    .seminars .note { font-size: 11px; color: #888; }
+    .seminars .no-talks { color: #666; font-style: italic; }
+    .seminars footer { font-size: .85rem; color: #666; margin-top: .6rem; }
   </style>
   <form action="https://www.google.com/search" method="get" style="display:inline">
   <input type="hidden" name="q" value="site:slavakargin.github.io">
@@ -70,7 +82,11 @@
         <img src="/images/vkargin_small_2.jpg" alt="Portrait of Vladislav Kargin">
       </figure>
     </section>
-
+    <section class="seminars" id="seminars" hidden>
+      <h2>This Week's Seminars</h2>
+      <div id="seminars-content">Loading…</div>
+      <footer><a href="https://www2.math.binghamton.edu/p/seminars">Full seminar listings →</a></footer>
+    </section> 
     <section class="cards">
       <div class="card">
         <div>Publications</div>
@@ -112,5 +128,16 @@
     </p>
     <p>© Vladislav Kargin. Mirror content may retain the original BU wiki license and attribution; follow links for details.</p>
   </footer>
+  <script>
+    fetch('https://slavakargin.github.io/seminar-scraper/')
+    .then(r => r.ok ? r.text() : Promise.reject())
+    .then(html => {
+      const m = html.match(/<table[\s\S]*?<\/table>|<p class="no-talks"[\s\S]*?<\/p>/);
+      if (!m) return;
+      document.getElementById('seminars-content').innerHTML = m[0];
+      document.getElementById('seminars').hidden = false;
+    })
+    .catch(() => {});  // silently fail — section stays hidden
+  </script>
 </body>
 </html>
