@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lecture Notes &amp; Notes — Vladislav Kargin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lecture notes, technical notes, and PhD thesis by Vladislav Kargin (Binghamton University): linear algebra, probability, random matrices, free probability, and more.">
+  <meta property="og:title" content="Lecture Notes &amp; Notes — Vladislav Kargin">
+  <meta property="og:description" content="Lecture notes, technical notes, and PhD thesis by Vladislav Kargin.">
+  <meta property="og:url" content="https://slavakargin.github.io/notes/">
+  <link rel="canonical" href="https://slavakargin.github.io/notes/">
+
+  <script data-goatcounter="https://slavakargin.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+  <link rel="icon" href="/images/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+  <script>
+    window.MathJax = { tex: { inlineMath: [['$','$'], ['\\(','\\)']] } };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root { --max: 960px; --link: #0b57d0; --muted: #666; --border: #e7e7e7; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial; color: #111; }
+    header, main, footer { max-width: var(--max); margin: 0 auto; padding: 1rem; }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+    .brand { font-weight: 700; font-size: 1.15rem; letter-spacing: .2px; text-decoration: none; color: inherit; }
+    nav a { text-decoration: none; margin-left: 1rem; color: var(--link); }
+    nav a:first-child { margin-left: 0; }
+    h1 { margin: .3rem 0 .4rem; font-size: 1.6rem; }
+    h2 { margin: 1.6rem 0 .6rem; font-size: 1.25rem; padding-bottom: .25rem; border-bottom: 1px solid var(--border); }
+    a { color: var(--link); }
+
+    .lead { color: #333; margin: 0 0 .9rem; }
+
+    ul.papers { list-style: none; padding: 0; margin: 0; }
+    ul.papers > li { margin: 0 0 1.05rem; padding: 0; }
+    .title { font-weight: 600; }
+    .meta { color: #333; }
+    .links { color: var(--muted); }
+    .links a { margin-right: .15rem; }
+    .links .sep { color: #bbb; margin: 0 .35rem; }
+    .note { color: var(--muted); font-style: italic; font-size: .95rem; margin-top: .15rem; }
+
+    footer { border-top: 1px solid #eee; color: var(--muted); font-size: .95rem; }
+    @media (max-width: 640px) {
+      header { gap: .5rem; }
+      nav { width: 100%; }
+      nav a:first-child { margin-left: 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="/">Vladislav Kargin</a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/publications/">Publications</a>
+      <a href="/notes/">Notes</a>
+      <a href="/bu/calculations/">Calculations</a>
+      <a href="/bu/">BU Mirror</a>
+      <a href="/cv.pdf" data-goatcounter-click="cv-download">CV (PDF)</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Lecture Notes &amp; Notes</h1>
+    <p class="lead">
+      Course lecture notes, technical notes, and PhD thesis. Most items link to a PDF;
+      the random-matrix and free-probability lecture notes are also on arXiv.
+    </p>
+
+    <h2 id="lecture-notes">Lecture Notes</h2>
+    <ul class="papers">
+      <li>
+        <div class="title"><a href="/bu/assets/0aeeaf64474e.pdf">LN for Advanced Linear Algebra</a></div>
+        <div class="meta">Binghamton, MATH 530, Spring 2024.</div>
+      </li>
+      <li>
+        <div class="title"><a href="/bu/assets/3bcab5c7281d.pdf">LN for Linear Algebra for Statisticians</a></div>
+        <div class="meta">Binghamton, MATH 530, Fall 2022.</div>
+      </li>
+      <li>
+        <div class="title"><a href="/bu/assets/307461aed216.pdf">LN for Advanced Probability Theory</a></div>
+        <div class="meta">Binghamton, MATH 571, Fall 2019.</div>
+      </li>
+      <li>
+        <div class="title"><a href="/bu/assets/ce7d097c5a5b.pdf">LN for Life Contingency Models I</a></div>
+        <div class="meta">Binghamton, Fall 2017.</div>
+      </li>
+      <li>
+        <div class="title"><a href="/bu/assets/55da63ed3779.pdf">LN for Life Contingency Models II</a></div>
+        <div class="meta">Binghamton, Spring 2017.</div>
+      </li>
+      <li>
+        <div class="title"><a href="/bu/assets/f69aaf977f68.pdf">LN for Intro to Probability</a></div>
+        <div class="meta">Binghamton, MATH 447, Spring 2022.</div>
+      </li>
+      <li>
+        <div class="title">Lecture Notes on Random Matrices</div>
+        <div class="meta">(joint with E. Yudovina)<br>
+          Lecture notes for a U. of Cambridge Part III course, Michaelmas 2011.</div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/1305.2153">arXiv: 1305.2153</a>
+        </div>
+      </li>
+      <li>
+        <div class="title">Lecture Notes on Free Probability</div>
+        <div class="meta">Lecture notes for a graduate course at Stanford University, Spring 2009.</div>
+        <div class="links">
+          <a href="https://arxiv.org/abs/1305.2611">arXiv: 1305.2611</a>
+        </div>
+      </li>
+    </ul>
+
+    <h2 id="technical-notes">Technical notes</h2>
+    <ul class="papers">
+      <li>
+        <div class="title"><a href="/bu/assets/3cd6365593ca.pdf">Quaternion Orthogonal Polynomials</a></div>
+        <div class="meta">February 2018.</div>
+        <div class="note">A brief summary of properties of quaternion orthogonal polynomials.</div>
+      </li>
+    </ul>
+
+    <h2 id="thesis">PhD thesis</h2>
+    <ul class="papers">
+      <li>
+        <div class="title"><a href="/bu/assets/cbfa554193c4.pdf">Thesis (2008)</a></div>
+        <div class="meta">PhD thesis in mathematics.</div>
+        <div class="note">Technically speaking, it is published by ProQuest Dissertation Publishing.</div>
+      </li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>
+      <a href="https://scholar.google.com/citations?user=8DMiaVMAAAAJ">Google Scholar</a> ·
+      <a href="https://orcid.org/0000-0002-3408-544X">ORCID</a> ·
+      <a href="https://arxiv.org/a/kargin_v_1">arXiv author page</a>
+    </p>
+    <p>© Vladislav Kargin.</p>
+  </footer>
+</body>
+</html>
