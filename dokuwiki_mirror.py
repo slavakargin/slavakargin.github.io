@@ -73,6 +73,7 @@ SKIP_SLUGS = {
     "kargin_publications",   # canonical at /publications/; /bu/kargin_publications/ is a redirect stub
     "unpublished",           # canonical at /notes/; /bu/unpublished/ is a redirect stub
     "calculations",          # canonical at /calculations/; /bu/calculations/ is a redirect stub
+    "teaching_archive",      # canonical at /teaching/; /bu/teaching_archive/ is a redirect stub
 }
 OUTDIR = Path(BASE_PREFIX.strip("/")) if BASE_PREFIX else Path(".")
 ASSET_DIR = OUTDIR / "assets"
