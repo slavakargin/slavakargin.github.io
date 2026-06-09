@@ -1,9 +1,12 @@
 name: Mirror BU DocuWiki
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: "0 14 * * 1"   # weekly (UTC); adjust if you like
+  workflow_dispatch:        # manual only
+  # Disabled: the source DocuWiki is being retired and is no longer reachable,
+  # so the nightly mirror has nothing to fetch (and only produced failing runs).
+  # The /bu/ static copy stays in the repo. Re-enable below only if the wiki returns.
+  # schedule:
+  #   - cron: "0 14 * * 1"   # weekly (UTC); adjust if you like
 
 permissions:
   contents: write
