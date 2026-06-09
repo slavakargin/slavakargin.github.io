@@ -348,13 +348,9 @@ def title_from_html(html: str) -> str:
 
 
 def sync_root_cv():
-    assets_dir = OUTDIR / "assets"   # OUTDIR is 'bu' when BASE_PREFIX='/bu'
-    if not assets_dir.exists():
-        return
-    pdfs = sorted(assets_dir.glob("*.pdf"), key=lambda p: p.stat().st_mtime, reverse=True)
-    if pdfs:
-        shutil.copy2(pdfs[0], Path("cv.pdf"))
-        print(f"  synced cv.pdf from {pdfs[0].name}")
+    # Disabled: cv.pdf (and cv-full.pdf) are maintained by hand and decoupled
+    # from the wiki. Kept as a no-op so nothing can re-link cv.pdf to the mirror.
+    return
 
 def main():
     pages = list_namespace_pages()
@@ -370,12 +366,8 @@ def main():
         title = title_from_html(cleaned)
         outdir = OUTDIR / ("" if slug=="start" else slug)
         save_page(outdir, title, cleaned, url)
-    # After mirroring, sync cv.pdf at repo root if we detected a CV candidate
-    if CV_CANDIDATE_LOCAL and Path(CV_CANDIDATE_LOCAL).exists():
-        shutil.copy2(CV_CANDIDATE_LOCAL, Path("cv.pdf"))
-        print(f"  synced cv.pdf from {CV_CANDIDATE_LOCAL}")
-    else:
-        print("  [warn] no CV candidate found; leaving cv.pdf unchanged.")
+    # cv.pdf is now maintained by hand in the repo (decoupled from the wiki).
+    # The mirror no longer overwrites it; cv.pdf and cv-full.pdf are managed manually.
     #sync_root_cv()
     print("\nDone. Commit & push to publish on GitHub Pages.")
 
