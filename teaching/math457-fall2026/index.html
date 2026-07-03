@@ -14,21 +14,41 @@
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
   <style>
-    :root { --max: 960px; --link: #0b57d0; --muted: #666; --border: #e7e7e7; }
+    :root { --max: 820px; --link: #0b57d0; --muted: #666; --border: #e7e7e7; }
     * { box-sizing: border-box; }
-    body { margin: 0; font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial; color: #111; }
+    body { margin: 0; font: 16px/1.65 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial; color: #111; }
     header, main, footer { max-width: var(--max); margin: 0 auto; padding: 1rem; }
     header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
     .brand { font-weight: 700; font-size: 1.15rem; letter-spacing: .2px; text-decoration: none; color: inherit; }
     nav a { text-decoration: none; margin-left: 1rem; color: var(--link); }
     nav a:first-child { margin-left: 0; }
-    h1 { margin: .3rem 0 .2rem; font-size: 1.5rem; }
-    .sub { color: var(--muted); margin: 0 0 1rem; }
-    h2 { margin: 1.6rem 0 .5rem; font-size: 1.2rem; padding-bottom: .25rem; border-bottom: 1px solid var(--border); }
     a { color: var(--link); }
-    .notice { background: #fff8e1; border: 1px solid #f3e2a9; border-radius: 6px; padding: .7rem .9rem; margin: 0 0 1rem; color: #5b4b16; }
+    h1 { margin: .3rem 0 .1rem; font-size: 1.55rem; }
+    .sub { color: var(--muted); margin: 0 0 1rem; }
+    h2 { margin: 1.9rem 0 .5rem; font-size: 1.22rem; padding-bottom: .25rem; border-bottom: 1px solid var(--border); }
+
+    .notice { background: #fff8e1; border: 1px solid #f3e2a9; border-radius: 6px; padding: .7rem .9rem; margin: 0 0 1.2rem; color: #5b4b16; }
+    .callout { background: #f4f7ff; border: 1px solid #d7e2fb; border-radius: 6px; padding: .8rem 1rem; margin: .6rem 0 0; }
     .tbd { color: var(--muted); font-style: italic; }
+
+    dl.info { margin: .3rem 0 0; display: grid; grid-template-columns: max-content 1fr; gap: .3rem 1rem; }
+    dl.info dt { font-weight: 600; }
+    dl.info dd { margin: 0; }
+
+    ul { padding-left: 1.2rem; }
+    li { margin: .25rem 0; }
+
+    table.sched { border-collapse: collapse; width: 100%; margin: .5rem 0 0; }
+    table.sched th, table.sched td { text-align: left; padding: .45rem .6rem; border-bottom: 1px solid var(--border); }
+    table.sched th { background: #fafafa; }
+
     footer { border-top: 1px solid #eee; color: var(--muted); font-size: .95rem; }
+    @media (max-width: 640px) {
+      dl.info { grid-template-columns: 1fr; gap: .1rem; }
+      dl.info dt { margin-top: .4rem; }
+      nav { width: 100%; }
+      nav a:first-child { margin-left: 0; }
+    }
   </style>
 </head>
 <body>
@@ -43,25 +63,103 @@
     <h1>Math 457: Introduction to Statistical Learning</h1>
     <p class="sub">Fall 2026 · Binghamton University</p>
 
-    <p class="notice"><strong>Preliminary.</strong> This syllabus is a placeholder and will be finalized before the semester begins. Details below are subject to change.</p>
+    <p class="notice"><strong>Preliminary.</strong> This syllabus is subject to change; some details (room, office hours, TA, and a few dates) are still to be determined, and the grading weights and schedule below are proposed. Standard university statements will be appended before the final version is posted.</p>
 
-    <h2>Course information</h2>
-    <p class="tbd">Meeting times, location, and office hours: to be announced.</p>
+    <dl class="info">
+      <dt>Instructor</dt><dd>Vladislav Kargin (<a href="mailto:vkargin@binghamton.edu">vkargin@binghamton.edu</a>)</dd>
+      <dt>Meetings</dt><dd>TR 3:15–4:45, in <span class="tbd">room TBD</span></dd>
+      <dt>Office hours</dt><dd><span class="tbd">day/time TBD</span> in WH-136, or by arrangement over Zoom</dd>
+      <dt>TA</dt><dd><span class="tbd">graduate teaching assistant TBD</span> — office hours <span class="tbd">TBD</span>; optional weekly problem/help session <span class="tbd">TBD</span> (recommended, not required)</dd>
+    </dl>
+
+    <p class="callout">This is a <strong>4-credit course</strong>: in addition to the scheduled meetings, students are expected to do at least 9.5 hours of course-related work each week. Because the course uses a <strong>flipped format</strong> (see below), a substantial part of that time is first-exposure reading and preparation done <em>before</em> class — assigned readings and course notes, short pre-class reading quizzes, computational work, studying for quizzes and exams, and preparing the project.</p>
+
+    <h2>Prerequisite</h2>
+    <ul>
+      <li>Scientific programming in a language such as R, Matlab, or Python.</li>
+      <li>Linear regression and statistical inference.</li>
+      <li>Matrix algebra, preferably including orthogonality, eigenvalues and eigenvectors, and singular value decomposition.</li>
+    </ul>
+    <p>A short, ungraded math self-check in the first week will help you (and me) see where a refresh is needed; optional refresher material and the TA's problem session are there to close gaps.</p>
+
+    <h2>How this course works (flipped format)</h2>
+    <p>Because our contact time is 3 hours per week, this course is <strong>flipped</strong>. Before each class you will do a short assigned reading (from ISLP, Bishop, or the course notes) and a brief low-stakes reading quiz. Class time is reserved for what actually needs us in the same room: working through model choices, critiquing analyses, reading and debugging code, and short in-class quizzes on your own work. <strong>Class will not re-deliver the reading</strong>, so keeping up with the pre-class material is essential rather than optional.</p>
 
     <h2>Description</h2>
-    <p class="tbd">To be added.</p>
+    <p>This course is a survey of statistical learning methods for supervised and unsupervised learning, with an emphasis on judgment: <em>when</em> and <em>why</em> a method is appropriate, not only how to run it. Topics include regression with regularization (ridge, LASSO) and model selection; resampling and cross-validation; classification, logistic regression, and model evaluation (ROC/AUC, calibration); tree-based methods and ensembles (random forests, boosting); support vector machines and kernels; principal component analysis and clustering; and modern deep learning, with neural networks, convolutional networks, transfer learning, and <strong>transformers and attention</strong> treated as central. A recurring thread is the critical evaluation of analyses — including AI-generated ones — for leakage, validation, model choice, and interpretation.</p>
 
-    <h2>Prerequisites</h2>
-    <p class="tbd">To be added.</p>
+    <h2>Learning outcomes</h2>
+    <p>Students will learn how and when to apply statistical learning techniques, their comparative strengths and weaknesses, and how to critically evaluate the performance of learning algorithms. Students completing this course should be able to:</p>
+    <ul>
+      <li>process and visualize different data types;</li>
+      <li>apply statistical learning methods to build predictive models and perform exploratory analysis;</li>
+      <li>explain the underlying mechanisms of predictive models and interpret their results in context;</li>
+      <li>properly tune, select, and validate models, and recognize leakage, class imbalance, and other failure modes;</li>
+      <li><strong>read, evaluate, and critique an analysis or a piece of code — including one produced by an AI tool — and identify where it is wrong;</strong></li>
+      <li>understand modern architectures (including transformers) at a conceptual level and judge where they are appropriate;</li>
+      <li>work both independently and in a team to solve problems; and</li>
+      <li>present and communicate findings effectively, in writing and in an oral defense.</li>
+    </ul>
 
-    <h2>Textbook and references</h2>
-    <p class="tbd">To be added.</p>
+    <h2>Texts and resources</h2>
+    <p><strong>Text.</strong> James, Witten, Hastie and Tibshirani, 2021. <em>An Introduction to Statistical Learning with Applications in Python</em> (ISLP). Home page: <a href="https://www.statlearning.com">statlearning.com</a> (free PDF available).</p>
+    <p><strong>Supplementary text.</strong> Bishop &amp; Bishop, 2024. <em>Deep Learning: Foundations and Concepts.</em> Home page: <a href="https://www.bishopbook.com">bishopbook.com</a> (digital version available).</p>
+    <p><strong>Course notes.</strong> For several topics — transformers above all, where the textbook treatment is fragmented — I will provide concise course notes that serve as the primary first-exposure material. These are listed on the schedule and are required reading where assigned.</p>
+    <p><strong>Online resources.</strong> There is an online course taught by the ISLP authors, available on <a href="https://www.edx.org/learn/python/stanford-university-statistical-learning-with-python">edX</a> and <a href="https://www.youtube.com/playlist?list=PLoROMvodv4rOzrYsAxzQyHb8n_RWNuS1e">YouTube</a>. It overlaps with our course but is not identical: different ordering, and some of our topics are not covered.</p>
+    <p><strong>Software.</strong> We will use Python and Google Colab.</p>
+    <p><strong>Communication.</strong> We will use Piazza for announcements and questions (sign-up: <span class="tbd">Fall 2026 Piazza link TBD</span>). Brightspace will be used minimally, for grade recording.</p>
 
-    <h2>Grading</h2>
-    <p class="tbd">To be added.</p>
+    <h2>AI-use policy</h2>
+    <p>This course treats AI tools (ChatGPT, Claude, Copilot, and the like) as instruments you must learn to <strong>use and to judge</strong> — not something to hide. The policy is tiered by the type of work:</p>
+    <ul>
+      <li><strong>Pre-class reading, low-stakes homework, and computational work:</strong> AI use is permitted and often expected. You must be able to explain and defend anything you submit — you <em>will</em> be asked to, in class. Add a one-line note disclosing what tool you used and for what.</li>
+      <li><strong>Critique tasks:</strong> you will frequently be handed an AI-generated analysis (sometimes deliberately flawed) to evaluate, debug, and correct. Here AI is the object of study, not a shortcut.</li>
+      <li><strong>In-class quizzes, the midterm, the final exam, and project oral defenses:</strong> no AI, no notes, no outside assistance. This is where most of your grade comes from, precisely because it is where your own judgment is visible.</li>
+    </ul>
+    <p>The principle: AI can produce analysis; this course assesses whether you can tell good analysis from bad. Using AI <em>without understanding</em> is the one approach that will not serve you here, because the graded moments are AI-free.</p>
 
-    <h2>Schedule</h2>
-    <p class="tbd">To be added.</p>
+    <h2>Assessment components</h2>
+    <ul>
+      <li><strong>Reading quizzes (pre-class):</strong> short, low-stakes, and frequent; the forcing function that keeps the flipped format working. Also serve as an engagement and background signal.</li>
+      <li><strong>In-class quizzes:</strong> graded, closed-book, often tied to your own submitted work. The two lowest or missing quiz scores are dropped.</li>
+      <li><strong>Critique tasks:</strong> evaluating and repairing flawed / AI-generated analyses.</li>
+      <li><strong>Homework:</strong> low-stakes and formative — done to learn, discussed with classmates, but written up individually. Computational assignments via Google Colab / Google Classroom (<span class="tbd">class code TBD</span>); some conceptual work via Gradescope. A short DataCamp component may be assigned for Python onboarding (waivable with proof of prior Python coursework).</li>
+      <li><strong>Midterm and final exam:</strong> in-class / proctored. The midterm covers the classical core (through logistic regression). The final is weighted toward the second half of the course (deep learning, transformers, trees, unsupervised methods, SVM) and is built around judgment and critique — evaluating analyses, choosing and justifying methods, and finding flaws — rather than mechanical recall.</li>
+      <li><strong>Project:</strong> see below.</li>
+    </ul>
+
+    <h2>Project</h2>
+    <p>A group project (<strong>groups of 3–4</strong>) using real data. Deliverables: a proposal, a preliminary report, slides, a <strong>final report</strong>, and an <strong>oral defense</strong> in which each member explains their own results and decisions. Negative or inconclusive results are fine if the question is real and the analysis is honest; originality of the question and the quality of the data story matter as much as method correctness.</p>
+
+    <h2>Grading (proposed weights)</h2>
+    <ul>
+      <li>In-class &amp; reading quizzes — 15%</li>
+      <li>Critique tasks — 10%</li>
+      <li>Homework (formative) — 5%</li>
+      <li>Midterm exam — 20%</li>
+      <li>Project (reports, slides, oral defense) — 30%</li>
+      <li>Final exam — 20%</li>
+    </ul>
+    <p>Letter grades will be assigned on a scale set after the course ends, but you are guaranteed at least: <strong>A</strong> for ≥ 90, <strong>A−</strong> for ≥ 85, <strong>B+</strong> for ≥ 80, <strong>B</strong> for ≥ 75, <strong>B−</strong> for ≥ 70, <strong>C+</strong> for ≥ 65, <strong>C</strong> for ≥ 60, <strong>C−</strong> for ≥ 55, <strong>D</strong> for ≥ 50.</p>
+
+    <h2>Tentative schedule (key dates)</h2>
+    <table class="sched">
+      <thead><tr><th>Item</th><th>Date</th></tr></thead>
+      <tbody>
+        <tr><td>Classes begin</td><td>Tue, Aug 18</td></tr>
+        <tr><td>Midterm</td><td>Thu, Oct 8</td></tr>
+        <tr><td>Fall break (no classes)</td><td>Oct 10 – 18</td></tr>
+        <tr><td>Project proposal</td><td>due Fri, Oct 30</td></tr>
+        <tr><td>Preliminary report</td><td>due Fri, Nov 13</td></tr>
+        <tr><td>Project oral defenses</td><td>Thu Dec 3 &amp; Tue Dec 8 (in class)</td></tr>
+        <tr><td>Final report</td><td>due Wed, Dec 9</td></tr>
+        <tr><td>Last day of classes</td><td>Tue, Dec 8</td></tr>
+        <tr><td>Final exam</td><td><span class="tbd">TBD — finals period Dec 10–16, per registrar</span></td></tr>
+      </tbody>
+    </table>
+    <p class="sub" style="margin-top:.6rem">A detailed week-by-week topic schedule is distributed separately.</p>
+
+    <p class="sub"><em>Standard university statements on accessibility/disability accommodations, academic honesty, and religious observance will be appended before posting.</em></p>
   </main>
 
   <footer>
