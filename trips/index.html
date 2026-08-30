@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Год в трёх поездках</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Karla:wght@400;500;600&display=swap">
+  <style>
+:root{
+  --ground:#eceeed; --surface:#f7f8f7; --ink:#191d1c; --soft:#4d5754;
+  --muted:#6f7a77; --rule:#d2d8d6; --accent:#8a6a22; --shadow:rgba(20,28,26,.14);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#131615; --surface:#1b1f1e; --ink:#e9ecea; --soft:#b3bcb9;
+    --muted:#8e9895; --rule:#2b3130; --accent:#c9a24a; --shadow:rgba(0,0,0,.5);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#131615; --surface:#1b1f1e; --ink:#e9ecea; --soft:#b3bcb9;
+  --muted:#8e9895; --rule:#2b3130; --accent:#c9a24a; --shadow:rgba(0,0,0,.5);
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:"Karla","Helvetica Neue",Arial,sans-serif;
+  font-size:17px; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:840px; margin:0 auto; padding:0 20px 96px}
+header.top{padding:72px 0 40px; border-bottom:1px solid var(--rule)}
+h1{
+  font-family:"Fraunces",Georgia,serif; font-weight:500;
+  font-size:clamp(2.4rem,7vw,3.9rem); line-height:1.02; letter-spacing:-.02em;
+  margin:0 0 18px; text-wrap:balance;
+}
+.dek{max-width:60ch; color:var(--soft); font-size:1.06rem; margin:0 0 22px}
+.dek + .dek{margin-top:-6px}
+.meta{
+  font-size:.76rem; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--muted); margin:26px 0 0;
+}
+.chapter{padding:64px 0 8px; border-bottom:1px solid var(--rule)}
+.chapter:last-of-type{border-bottom:0}
+.chapter-head{margin:0 0 40px}
+.eyebrow{
+  font-size:.74rem; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent); margin:0 0 10px; font-weight:600;
+}
+.chapter-head h2{
+  font-family:"Fraunces",Georgia,serif; font-weight:600;
+  font-size:clamp(1.9rem,5vw,2.7rem); line-height:1.05; letter-spacing:-.015em;
+  margin:0 0 14px;
+}
+.lede{max-width:58ch; color:var(--soft); margin:0}
+.shot{margin:0 0 52px; display:flex; flex-direction:column; gap:12px}
+.shot img{
+  display:block; width:100%; height:auto; border-radius:2px;
+  background:var(--surface); box-shadow:0 1px 3px var(--shadow), 0 12px 28px -18px var(--shadow);
+}
+figcaption{
+  max-width:56ch; color:var(--muted); font-size:.93rem; line-height:1.5;
+  border-left:2px solid var(--rule); padding-left:12px;
+}
+footer.end{padding:56px 0 0; color:var(--muted); font-size:.93rem; max-width:56ch}
+@media (prefers-reduced-motion: no-preference){
+  .shot{opacity:0; transform:translateY(14px); transition:opacity .6s ease, transform .6s ease}
+  .shot.seen{opacity:1; transform:none}
+}
+@media (max-width:520px){
+  body{font-size:16px}
+  .wrap{padding:0 16px 72px}
+  header.top{padding:48px 0 32px}
+  .chapter{padding:48px 0 8px}
+  .shot{margin-bottom:40px}
+}
+</style>
+<style>
+  img{max-width:100%}
+  [hidden]{display:none!important}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <h1>Год в трёх поездках</h1>
+  <p class="dek">Вова, вот куда мы съездили за этот год — Англия, Португалия и Венгрия. Тридцать четыре фотографии, к каждой подпись, чтобы было понятно, что это за место и что там происходит.</p>
+  <p class="dek">Листай сверху вниз, это недолго.</p>
+  <p class="meta">34 фотографии · 3 поездки</p>
+</header>
+<section class="chapter" id="england">
+  <header class="chapter-head">
+    <p class="eyebrow">май · Йоркшир и Озёрный край</p>
+    <h2>Англия</h2>
+    <p class="lede">Север Англии: скалы, выточенные ветром, и озёра между холмов. В мае там всё зелёное и светло почти до десяти вечера.</p>
+  </header>
+<figure class="shot">
+<img src="images/photo-01.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="Озеро Дервентуотер в Озёрном крае. Вода тут стального цвета даже в солнечный день.">
+<figcaption>Озеро Дервентуотер в Озёрном крае. Вода тут стального цвета даже в солнечный день.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-02.jpg" width="1100" height="825" loading="lazy" decoding="async" alt="Закат над рекой в городке Кесвик. Половина десятого вечера, и ещё светло.">
+<figcaption>Закат над рекой в городке Кесвик. Половина десятого вечера, и ещё светло.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-03.jpg" width="1100" height="825" loading="lazy" decoding="async" alt="Скалы Бримхэм в Йоркшире. Этот камень стоит на пятачке шириной в ладонь — его так выточил ветер.">
+<figcaption>Скалы Бримхэм в Йоркшире. Этот камень стоит на пятачке шириной в ладонь — его так выточил ветер.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-04.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="Наверху этих скал ветер такой, что разговаривать приходится громко.">
+<figcaption>Наверху этих скал ветер такой, что разговаривать приходится громко.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-05.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="Берег Дервентуотера, за спиной гора Кэтбеллс. В воду заходят прямо в одежде — она ледяная.">
+<figcaption>Берег Дервентуотера, за спиной гора Кэтбеллс. В воду заходят прямо в одежде — она ледяная.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-06.jpg" width="1100" height="825" loading="lazy" decoding="async" alt="Одинокий дуб посреди пастбища. Такие деревья тут стоят по несколько сотен лет.">
+<figcaption>Одинокий дуб посреди пастбища. Такие деревья тут стоят по несколько сотен лет.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-07.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="Он же вблизи — для масштаба.">
+<figcaption>Он же вблизи — для масштаба.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-08.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="Водопад Лодор. Он спрятан в лесу, и слышно его гораздо раньше, чем видно.">
+<figcaption>Водопад Лодор. Он спрятан в лесу, и слышно его гораздо раньше, чем видно.</figcaption>
+</figure>
+</section>
+<section class="chapter" id="lisbon">
+  <header class="chapter-head">
+    <p class="eyebrow">лето · Португалия</p>
+    <h2>Лиссабон</h2>
+    <p class="lede">Город на холмах у широченной реки Тежу. Жарко, всё выложено плиткой, и почти везде можно идти пешком.</p>
+  </header>
+<figure class="shot">
+<img src="images/photo-09.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="Утро в кафе в нижнем городе. Завтракают тут долго и на улице.">
+<figcaption>Утро в кафе в нижнем городе. Завтракают тут долго и на улице.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-10.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="На набережной Тежу каждое лето строят песчаные скульптуры в человеческий рост.">
+<figcaption>На набережной Тежу каждое лето строят песчаные скульптуры в человеческий рост.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-11.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="Река такая широкая, что другой берег в дымке. Сзади мост 25 Апреля — издали его часто принимают за сан-францисский.">
+<figcaption>Река такая широкая, что другой берег в дымке. Сзади мост 25 Апреля — издали его часто принимают за сан-францисский.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-12.jpg" width="1100" height="825" loading="lazy" decoding="async" alt="Терраса над крышами. Город стоит на холмах, и такие смотровые площадки тут на каждом шагу.">
+<figcaption>Терраса над крышами. Город стоит на холмах, и такие смотровые площадки тут на каждом шагу.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-13.jpg" width="1100" height="825" loading="lazy" decoding="async" alt="Обычная улица в старом квартале: люди сидят в окнах и смотрят вниз, как в театре.">
+<figcaption>Обычная улица в старом квартале: люди сидят в окнах и смотрят вниз, как в театре.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-14.jpg" width="1100" height="825" loading="lazy" decoding="async" alt="Музей современного искусства на набережной. Залы почти пустые — можно стоять перед картиной сколько хочешь.">
+<figcaption>Музей современного искусства на набережной. Залы почти пустые — можно стоять перед картиной сколько хочешь.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-15.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="Под тем самым мостом. Опоры уходят прямо в воду.">
+<figcaption>Под тем самым мостом. Опоры уходят прямо в воду.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-16.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="Старая электростанция Централ Тежу, теперь музей. Котлы, трубы и пульты оставили как были.">
+<figcaption>Старая электростанция Централ Тежу, теперь музей. Котлы, трубы и пульты оставили как были.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-17.jpg" width="1100" height="825" loading="lazy" decoding="async" alt="Электричка в горный городок Синтра. По вагону ходил аккордеонист и играл всю дорогу.">
+<figcaption>Электричка в горный городок Синтра. По вагону ходил аккордеонист и играл всю дорогу.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-18.jpg" width="1100" height="825" loading="lazy" decoding="async" alt="В Синтре по горе возят на тук-туках: улочки такие узкие, что машина не проходит.">
+<figcaption>В Синтре по горе возят на тук-туках: улочки такие узкие, что машина не проходит.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-19.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="В квартале бывших фабрик на стене висит зеркальце с надписью «ты — часть искусства».">
+<figcaption>В квартале бывших фабрик на стене висит зеркальце с надписью «ты — часть искусства».</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-20.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="Зеркало в форме сердца в музее. Единственный кадр, где мы втроём сразу — двое в отражении.">
+<figcaption>Зеркало в форме сердца в музее. Единственный кадр, где мы втроём сразу — двое в отражении.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-21.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="В ботаническом саду живут белые павлины и ходят где хотят.">
+<figcaption>В ботаническом саду живут белые павлины и ходят где хотят.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-22.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="В жару в городские фонтаны можно заходить. И все заходят.">
+<figcaption>В жару в городские фонтаны можно заходить. И все заходят.</figcaption>
+</figure>
+</section>
+<section class="chapter" id="budapest">
+  <header class="chapter-head">
+    <p class="eyebrow">лето · Венгрия</p>
+    <h2>Будапешт</h2>
+    <p class="lede">Два города по берегам Дуная, сросшиеся в один: холмистая Буда и плоский Пешт. Половина поездки ушла на поиски крошечных бронзовых фигурок, спрятанных по всему городу.</p>
+  </header>
+<figure class="shot">
+<img src="images/photo-23.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="Бронзовый толстый полицейский в центре Пешта. Живот у него натёрт до блеска — считается, что надо потереть.">
+<figcaption>Бронзовый толстый полицейский в центре Пешта. Живот у него натёрт до блеска — считается, что надо потереть.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-24.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="По городу спрятаны фигурки размером с палец — их тайком ставит скульптор Колодко. Мы искали их всю поездку.">
+<figcaption>По городу спрятаны фигурки размером с палец — их тайком ставит скульптор Колодко. Мы искали их всю поездку.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-25.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="Купальни Сечени: горячая минеральная вода под открытым небом, и так круглый год.">
+<figcaption>Купальни Сечени: горячая минеральная вода под открытым небом, и так круглый год.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-26.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="Парадная лестница Будапештской оперы.">
+<figcaption>Парадная лестница Будапештской оперы.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-27.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="В золотом фойе там же.">
+<figcaption>В золотом фойе там же.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-28.jpg" width="1100" height="825" loading="lazy" decoding="async" alt="Цепной мост на закате — первый постоянный мост через Дунай. До него берега соединял паром.">
+<figcaption>Цепной мост на закате — первый постоянный мост через Дунай. До него берега соединял паром.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-29.jpg" width="1100" height="825" loading="lazy" decoding="async" alt="Руин-бары: бары в брошенных домах, где ничего не чинили, только притащили мебель, лампы и музыкантов.">
+<figcaption>Руин-бары: бары в брошенных домах, где ничего не чинили, только притащили мебель, лампы и музыкантов.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-30.jpg" width="1100" height="825" loading="lazy" decoding="async" alt="Ещё одна фигурка Колодко, уже ночью и у самой воды.">
+<figcaption>Ещё одна фигурка Колодко, уже ночью и у самой воды.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-31.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="А это скульптура в полный рост на набережной. За спиной подсвеченная Буда.">
+<figcaption>А это скульптура в полный рост на набережной. За спиной подсвеченная Буда.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-32.jpg" width="1100" height="825" loading="lazy" decoding="async" alt="С Рыбацкого бастиона видно оба берега сразу.">
+<figcaption>С Рыбацкого бастиона видно оба берега сразу.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-33.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="В городском парке стоят каменные колонны. На них, разумеется, лазают.">
+<figcaption>В городском парке стоят каменные колонны. На них, разумеется, лазают.</figcaption>
+</figure>
+<figure class="shot">
+<img src="images/photo-34.jpg" width="1100" height="825" loading="lazy" decoding="async" alt="Домой.">
+<figcaption>Домой.</figcaption>
+</figure>
+</section>
+<footer class="end">
+  <p>Если что-то захочется рассмотреть поближе или распечатать — скажи, пришлю эти же кадры в полном размере.</p>
+</footer>
+</div>
+<script>
+(function(){
+  if (!window.IntersectionObserver) {
+    document.querySelectorAll('.shot').forEach(function(el){ el.classList.add('seen'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) { e.target.classList.add('seen'); io.unobserve(e.target); }
+    });
+  }, {rootMargin: '0px 0px -8% 0px'});
+  document.querySelectorAll('.shot').forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>
