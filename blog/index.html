@@ -1,0 +1,32 @@
+---
+layout: blog
+title: Blog
+list_posts: true
+description: Notes by Vladislav Kargin — mathematics, travel, and whatever else comes up.
+---
+<h1>Blog</h1>
+
+{%- if site.posts.size == 0 %}
+<p class="muted">Nothing here yet.</p>
+{%- endif %}
+
+<div class="entries">
+{%- for post in site.posts limit: site.blog_recent %}
+  <article class="entry"{% if post.lang %} lang="{{ post.lang }}"{% endif %}>
+    <time class="entry-date" datetime="{{ post.date | date_to_xmlschema }}">{% include blog-date.html d=post.date lang=post.lang %}</time>
+    <div class="entry-body">
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <div class="teaser">
+{{ post.excerpt }}
+      </div>
+      {%- if post.content contains site.excerpt_separator %}
+      <p class="more"><a href="{{ post.url }}">{% if post.lang == "ru" %}Читать дальше{% else %}Continue reading{% endif %} →</a></p>
+      {%- endif %}
+    </div>
+  </article>
+{%- endfor %}
+</div>
+
+{%- if site.posts.size > site.blog_recent %}
+<p class="earlier"><a href="/blog/archive/">Earlier posts →</a></p>
+{%- endif %}

@@ -1,0 +1,11 @@
+{%- comment -%}
+  Usage in a post:
+  {% include figure.html src="/blog/images/x.jpg" caption="Text under the photo" wide=true %}
+  wide=true lets the picture run the full page width instead of the text column.
+{%- endcomment -%}
+<figure{% if include.wide %} class="wide"{% endif %}>
+  <img src="{{ include.src }}" alt="{{ include.alt | default: include.caption | strip_html | escape }}" loading="lazy">
+  {%- if include.caption %}
+  <figcaption>{{ include.caption }}</figcaption>
+  {%- endif %}
+</figure>

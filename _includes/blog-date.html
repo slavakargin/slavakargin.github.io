@@ -1,0 +1,8 @@
+{%- comment -%} Usage: {% include blog-date.html d=post.date lang=post.lang %} {%- endcomment -%}
+{%- if include.lang == "ru" -%}
+  {%- assign ru_months = "января,февраля,марта,апреля,мая,июня,июля,августа,сентября,октября,ноября,декабря" | split: "," -%}
+  {%- assign m = include.d | date: "%-m" | minus: 1 -%}
+  {{- include.d | date: "%-d" }} {{ ru_months[m] }} {{ include.d | date: "%Y" -}}
+{%- else -%}
+  {{- include.d | date: "%B %-d, %Y" -}}
+{%- endif -%}

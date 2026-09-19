@@ -1,0 +1,27 @@
+# Jekyll settings for slavakargin.github.io.
+# The rest of the site is hand-written HTML without front matter, so Jekyll
+# copies it through untouched; these settings only drive the /blog/ section.
+
+title: Vladislav Kargin
+author: Vladislav Kargin
+url: https://slavakargin.github.io
+timezone: America/New_York
+
+# Posts live in _posts/YYYY-MM-DD-slug.md and come out at /blog/YYYY/MM/slug/
+permalink: /blog/:year/:month/:title/
+
+# Everything above this line in a post is the teaser shown on /blog/
+# (the same role "==== Details ====" plays on the department wiki).
+excerpt_separator: "<!--more-->"
+
+plugins:
+  - jekyll-feed
+feed:
+  path: /blog/feed.xml
+
+# How many posts /blog/ shows before pointing to the archive.
+blog_recent: 5
+
+# While true, blog pages carry <meta name="robots" content="noindex">,
+# so search engines leave them alone. Set to false when the blog goes public.
+blog_noindex: true
