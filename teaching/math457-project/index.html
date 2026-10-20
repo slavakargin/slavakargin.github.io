@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Math 457 Project (Fall 2023–2025) — Vladislav Kargin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Project description for Math 457: Introduction to Statistical Learning, Binghamton University, used in Fall 2023, 2024 and 2025 (Vladislav Kargin).">
+  <link rel="canonical" href="https://slavakargin.github.io/teaching/math457-project/">
+
+  <script data-goatcounter="https://slavakargin.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+  <link rel="icon" href="/images/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+  <style>
+    :root { --max: 820px; --link: #0b57d0; --muted: #666; --border: #e7e7e7; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 16px/1.65 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial; color: #111; }
+    header, main, footer { max-width: var(--max); margin: 0 auto; padding: 1rem; }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+    .brand { font-weight: 700; font-size: 1.15rem; letter-spacing: .2px; text-decoration: none; color: inherit; }
+    nav a { text-decoration: none; margin-left: 1rem; color: var(--link); }
+    nav a:first-child { margin-left: 0; }
+    a { color: var(--link); }
+    h1 { margin: .3rem 0 .1rem; font-size: 1.55rem; }
+    .sub { color: var(--muted); margin: 0 0 1rem; }
+    h2 { margin: 1.9rem 0 .5rem; font-size: 1.22rem; padding-bottom: .25rem; border-bottom: 1px solid var(--border); }
+    .notice { background: #f4f7ff; border: 1px solid #d7e2fb; border-radius: 6px; padding: .7rem .9rem; margin: 0 0 1.2rem; }
+    ul, ol { padding-left: 1.3rem; }
+    li { margin: .25rem 0; }
+    footer { border-top: 1px solid #eee; color: var(--muted); font-size: .95rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="/">Vladislav Kargin</a>
+    <nav>
+      <a href="/teaching/">← Teaching</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Math 457: Project</h1>
+    <p class="sub">Introduction to Statistical Learning · Fall 2023, Fall 2024, Fall 2025 · Binghamton University</p>
+
+    <p class="notice">This is the project description used in Fall 2023–2025. The project format for Fall 2026 is different (groups of 3–4 and an oral defense); see the <a href="/teaching/math457-fall2026/">Fall 2026 syllabus</a>.</p>
+
+    <h2 id="task">Task</h2>
+    <p>Choose an existing dataset or collect your own data, and carry out data analyses to explain the relationships among the variables involved. You can also compare performance of different statistical tools for prediction or classification, using the chosen dataset.</p>
+
+    <h2 id="teams">Teams</h2>
+    <p>For this project you are supposed to work with 1–2 persons and submit a joint report. If you cannot find a team member, they will be assigned to you. (This is not recommended. Try to find a student who is compatible with your work style.)</p>
+
+    <h2 id="grading">Grading policies</h2>
+    <p>Team members will receive the same grade for the project and it is up to you to make sure that the work is shared equitably. The total points of the project is 100 points, which can be divided into three parts:</p>
+    <ol>
+      <li>Project Proposal (20 pts).</li>
+      <li>Presentation (40 pts): each team will give a 20 minutes presentation of the project (dates to be assigned).</li>
+      <li>Final report (40 pts).</li>
+    </ol>
+
+    <h2 id="schedule">Schedule</h2>
+    <p>See syllabus.</p>
+
+    <h2 id="methods">Methods</h2>
+    <p>You can use methods we covered in class or other statistical learning methods, with preference for more advanced methods.</p>
+
+    <h2 id="data">Data</h2>
+    <p>Find your own data set online, you will find plenty.</p>
+    <p>Popular collections of publicly-available datasets:</p>
+    <ul>
+      <li><a href="https://archive.ics.uci.edu/">UCI Machine Learning Repository</a></li>
+      <li><a href="https://www.kaggle.com/datasets">Kaggle</a></li>
+      <li><a href="https://academictorrents.com/browse.php?cat=6">Academic Torrents</a> (shares large datasets via BitTorrent technology)</li>
+      <li><a href="https://lib.stat.cmu.edu/datasets/">StatLib</a> (an older collection of data which is no longer updated)</li>
+    </ul>
+    <p>Some institutional collections of data:</p>
+    <ul>
+      <li><a href="https://data.worldbank.org/">World Bank</a></li>
+      <li><a href="https://www.who.int/data/collections">World Health Organization</a></li>
+    </ul>
+
+    <h2 id="guidelines">Guidelines</h2>
+    <ul>
+      <li>The proposal should give information about the team, description of the data, potential research questions and possible methods to use. The proposal should not exceed one page. The proposal, preliminary and final reports were uploaded via a Google Form.</li>
+      <li>The preliminary report is a draft of the final report.</li>
+      <li>The final report should not exceed 6 pages, including figures and tables, and must begin with an appropriate title highlighting your choice of topic and analysis.</li>
+      <li>The final report should include:
+        <ul>
+          <li>Description of research questions / issues. The significance of the problems.</li>
+          <li>Description of the data.</li>
+          <li>Preliminary studies: data visualization, dimension reduction, feature extraction, feature selection etc.</li>
+          <li>Statistical analysis:
+            <ol>
+              <li>Methods: what analyses were done and why. If there is any challenge in analysis, describe your approach to tackle the problem.</li>
+              <li>Results: a small number of well-designed and tailored tables and graphics may be appropriate.</li>
+            </ol>
+          </li>
+          <li>Discussion/Conclusion: convey your findings to a broad audience.</li>
+          <li>Try to avoid including too much of the software output. Supporting code can be kept in appendix or a separate document.</li>
+        </ul>
+      </li>
+      <li>The final report will be evaluated on the basis of the following criteria:
+        <ol>
+          <li>How interesting is the dataset and the research idea.</li>
+          <li>How well the dataset was prepared for analysis.</li>
+          <li>Quality of the statistical analysis.</li>
+          <li>Quality of material presentation (the grammar, orthography and style matter).</li>
+        </ol>
+      </li>
+      <li>The presentation in class can be done by a single team-member or by all team members, as you prefer it. It should include clear description of the data, research question(s) and findings. The evaluation criteria are similar to the criteria for the final report, with emphasis on the quality of presentation.</li>
+    </ul>
+  </main>
+
+  <footer>
+    <p><a href="/teaching/">Back to teaching</a></p>
+    <p>© Vladislav Kargin.</p>
+  </footer>
+</body>
+</html>
