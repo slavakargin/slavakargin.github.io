@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Math 457: Project — Fall 2026 — Vladislav Kargin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Project for Math 457: Introduction to Statistical Learning, Fall 2026, Binghamton University (Vladislav Kargin).">
+  <link rel="canonical" href="https://slavakargin.github.io/teaching/math457-fall2026-project/">
+  <meta name="robots" content="noindex">
+
+  <script data-goatcounter="https://slavakargin.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+  <link rel="icon" href="/images/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+  <style>
+    :root { --max: 820px; --link: #0b57d0; --muted: #666; --border: #e7e7e7; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 16px/1.65 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial; color: #111; }
+    header, main, footer { max-width: var(--max); margin: 0 auto; padding: 1rem; }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+    .brand { font-weight: 700; font-size: 1.15rem; letter-spacing: .2px; text-decoration: none; color: inherit; }
+    nav a { text-decoration: none; margin-left: 1rem; color: var(--link); }
+    nav a:first-child { margin-left: 0; }
+    a { color: var(--link); }
+    h1 { margin: .3rem 0 .1rem; font-size: 1.55rem; }
+    .sub { color: var(--muted); margin: 0 0 1rem; }
+    h2 { margin: 1.9rem 0 .5rem; font-size: 1.22rem; padding-bottom: .25rem; border-bottom: 1px solid var(--border); }
+    .tbd { color: var(--muted); font-style: italic; }
+    ul, ol { padding-left: 1.3rem; }
+    li { margin: .3rem 0; }
+    li > p { margin: .4rem 0 0; }
+    .table-wrap { overflow-x: auto; }
+    table.sched { border-collapse: collapse; width: 100%; margin: .5rem 0 1rem; }
+    table.sched th, table.sched td { text-align: left; padding: .45rem .6rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+    table.sched th { background: #fafafa; }
+    footer { border-top: 1px solid #eee; color: var(--muted); font-size: .95rem; }
+    @media (max-width: 640px) { nav { width: 100%; } nav a:first-child { margin-left: 0; } }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="/">Vladislav Kargin</a>
+    <nav>
+      <a href="/teaching/math457-fall2026/">← Math 457, Fall 2026</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Math 457: Project</h1>
+    <p class="sub">Fall 2026 · Binghamton University</p>
+
+    <p>Your team picks a real dataset, asks a question about it, and answers it with an honest, validated analysis. You defend that analysis in class. The project is <strong>30% of the course grade</strong>.</p>
+    <p>A negative or inconclusive result is fine if the question is real and the analysis is honest. The originality of the question and the quality of the data story matter as much as the choice of method.</p>
+
+    <h2 id="teams">Teams</h2>
+    <ul>
+      <li>Teams have <strong>3 or 4 students</strong>. By <strong>Friday, October 23, 11:59 pm</strong>, one member of each team submits the team's names through the team form <span class="tbd">(link to be posted)</span>.</li>
+      <li>If you are not on a team by then, I will place you. I first add students to teams of three, and form new teams only if more students remain. I make the final call on team composition.</li>
+      <li><strong>Each member owns one part of the project.</strong> For example:
+        <ul>
+          <li>data preparation;</li>
+          <li>the baseline and the validation;</li>
+          <li>the flexible model;</li>
+          <li>interpretation and limitations.</li>
+        </ul>
+        <p>Owning a part means you can explain and defend it at the defense, not that you did it alone. List who owns what in the proposal. You may update the list in the preliminary report.</p>
+      </li>
+    </ul>
+
+    <h2 id="data">Data</h2>
+    <ul>
+      <li><strong>Use real data that you find yourself.</strong> Good places to look:
+        <ul>
+          <li><a href="https://archive.ics.uci.edu/">UCI Machine Learning Repository</a></li>
+          <li><a href="https://www.kaggle.com/datasets">Kaggle Datasets</a></li>
+          <li><a href="https://academictorrents.com/">Academic Torrents</a></li>
+          <li><a href="https://lib.stat.cmu.edu/datasets/">StatLib</a></li>
+          <li><a href="https://data.worldbank.org/">World Bank Open Data</a></li>
+          <li><a href="https://www.who.int/data/gho">WHO Global Health Observatory</a></li>
+          <li>government open-data portals</li>
+        </ul>
+      </li>
+      <li><strong>Not allowed:</strong> the datasets that come with ISLP, and standard teaching datasets such as Titanic, Iris, MNIST, Boston Housing, or Wine Quality.</li>
+      <li><strong>The data must be real: records of actual people, things, or events.</strong> Synthetic or generated datasets are not allowed as the main dataset. Many Kaggle datasets are synthetic, including the Playground Series and anything described as "synthetic," "simulated," or "generated." Read the dataset's description before you commit to it.</li>
+      <li><strong>Simulation is welcome as a supplement.</strong> For example, check that your pipeline recovers an effect you planted, or show how unstable a selection is. Label it clearly as simulation.</li>
+      <li><strong>You need enough observations to hold some out for testing.</strong> As a rule of thumb, several hundred.</li>
+      <li><strong>If someone has already published an analysis of your dataset</strong> (Kaggle notebooks, for instance), cite it and say what you do differently.</li>
+      <li><strong>Say how the data were collected and who is in them.</strong> Your conclusions apply to that population, and you should say so.</li>
+    </ul>
+
+    <h2 id="analysis">The analysis</h2>
+    <ul>
+      <li><strong>State the question, and say what kind it is.</strong> Either you want to <em>predict</em> something for new cases, or you want to <em>understand</em> how the response relates to the predictors. The two call for different evidence.</li>
+      <li><strong>Start with a simple baseline</strong>, such as linear or logistic regression, or a trivial predictor. Then use at least one more flexible method from the course. Methods from later in the semester are welcome; the proposal may say "a flexible method, to be chosen."</li>
+      <li><strong>Compare the methods on data they were not fit on</strong>, a test set or cross-validation. Every step that uses the data goes inside the validation loop: scaling, imputation, variable selection and tuning.</li>
+      <li><strong>Choose a metric that fits the question.</strong> Accuracy alone is rarely enough when one class is rare or when the two kinds of error have different costs.</li>
+      <li><strong>Claim only what your output supports, and say for whom.</strong></li>
+    </ul>
+
+    <h2 id="deliverables">Deliverables and dates</h2>
+    <p>All deadlines are 11:59 pm.</p>
+    <div class="table-wrap">
+      <table class="sched">
+        <thead><tr><th>Deliverable</th><th>Due</th><th>Length</th><th>Weight</th></tr></thead>
+        <tbody>
+          <tr><td>Proposal</td><td>Fri, Oct 30</td><td>1 page</td><td>2%</td></tr>
+          <tr><td>Preliminary report</td><td>Fri, Nov 13</td><td>at most 4 pages</td><td>6%</td></tr>
+          <tr><td>Slides</td><td>Tue, Dec 1 (all teams)</td><td>—</td><td>—</td></tr>
+          <tr><td>Oral defense</td><td>Thu, Dec 3 or Tue, Dec 8, in class</td><td>about 17 minutes per team</td><td>4% team + 6% individual</td></tr>
+          <tr><td>Final report</td><td>Wed, Dec 9</td><td>at most 6 pages</td><td>12%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p><strong>Proposal.</strong> Include:</p>
+    <ul>
+      <li>team members, and who owns which part;</li>
+      <li>the data: source and link, number of observations, the response, the main predictors, how the data were collected;</li>
+      <li>the question, why it matters, and whether it is about prediction or understanding;</li>
+      <li>the baseline and the planned methods;</li>
+      <li>the validation plan and the metric;</li>
+      <li>one sentence on what a negative result would look like.</li>
+    </ul>
+
+    <p><strong>Preliminary report.</strong> This is a complete draft of the analysis, not an outline. It covers:</p>
+    <ul>
+      <li>the question and the data, and how the data were prepared;</li>
+      <li>the baseline;</li>
+      <li>at least one validated flexible model;</li>
+      <li>first results;</li>
+      <li>the problems still open.</li>
+    </ul>
+    <p>The defense questions are prepared from this report and your slides, so what is not in it cannot be defended.</p>
+
+    <p><strong>Oral defense.</strong> I assign the day for each team.</p>
+    <ul>
+      <li><strong>The talk</strong> takes about 8 minutes. Any members may present.</li>
+      <li><strong>The questions</strong> take about 7 minutes. Every member is asked at least one question, mostly about the part they own.</li>
+      <li><strong>Answers are your own:</strong> no notes, no devices, and no help from teammates.</li>
+      <li><strong>Grading:</strong> the talk is graded for the team. Each member's answers are graded individually.</li>
+    </ul>
+
+    <p><strong>Final report.</strong> At most 6 pages, including figures and tables, under a title that says what you studied. It covers:</p>
+    <ul>
+      <li>the question and why it matters;</li>
+      <li>the data;</li>
+      <li>the methods and the validation;</li>
+      <li>results, in a few well-designed tables or figures rather than raw software output;</li>
+      <li>limitations;</li>
+      <li>conclusions written for a reader who is not a statistician.</li>
+    </ul>
+    <p>The report should also address the issues raised at your defense. An appendix, not counted in the 6 pages, holds the contribution statement, the AI-use statement, and the link to the notebook.</p>
+
+    <h2 id="code">Code, reproducibility, and AI tools</h2>
+    <ul>
+      <li><strong>Notebook.</strong> Every report includes a link to a Colab notebook, shared so that anyone with the link can view it. The notebook must run from top to bottom and produce every number in the report.</li>
+      <li><strong>AI tools</strong> may be used for code and for help with writing, as in the <a href="/teaching/math457-fall2026/#ai-policy">course AI policy</a>.
+        <ul>
+          <li><strong>AI-use statement.</strong> Each report includes a short statement: which tools you used, and for what. If a tool suggested something you rejected, say what and why; that is often the most interesting sentence in the statement.</li>
+          <li>You must be able to explain everything you submit. The defense is where you will be asked to, and it is done without AI or notes.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2 id="submission">Submission</h2>
+    <p>Submit the proposal and the reports on <strong>Gradescope</strong>, <strong>one submission per team</strong>. The member who uploads adds the others as group members. Slides are also submitted on Gradescope.</p>
+
+    <h2 id="evaluation">How reports are evaluated</h2>
+    <p>The same six questions apply to the preliminary and the final report:</p>
+    <ol>
+      <li><strong>The question.</strong> Is it real and specific? Can the analysis answer it? Is it clear whether it is about prediction or understanding?</li>
+      <li><strong>The data.</strong> Are the source, the preparation, and the population (who is in the data, and to whom the conclusions apply) explained?</li>
+      <li><strong>The validation.</strong> Is there a baseline? Are the methods compared on held-out data, with every data-dependent step inside the loop, and with a metric that fits the question?</li>
+      <li><strong>The claims.</strong> Do the conclusions follow from the output? For example: coefficients read with the other variables in the model in mind, ranking not mistaken for calibration, association not presented as effect.</li>
+      <li><strong>The limitations.</strong> What could make the conclusions wrong, and what would a negative result mean?</li>
+      <li><strong>The communication.</strong> Is the report clear and readable, with a few good tables or figures, and does the notebook reproduce it?</li>
+    </ol>
+  </main>
+
+  <footer>
+    <p><a href="/teaching/math457-fall2026/">Back to the Fall 2026 syllabus</a> · <a href="/teaching/">Teaching</a></p>
+    <p>© Vladislav Kargin.</p>
+  </footer>
+</body>
+</html>
