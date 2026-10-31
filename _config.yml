@@ -24,4 +24,4 @@ blog_recent: 5
 
 # While true, blog pages carry <meta name="robots" content="noindex">,
 # so search engines leave them alone. Set to false when the blog goes public.
-blog_noindex: true
+blog_noindex: false
